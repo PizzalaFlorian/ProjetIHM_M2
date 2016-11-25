@@ -1,0 +1,17 @@
+/*Import template*/
+body {
+	font-family: "Lato", sans-serif
+}
+.mySlides {
+	display: none
+}
+
+#navDemo{
+	margin-top:46px
+}
+
+/*Redéfinition*/
+.w3-black{
+	background-color:#2D1818 !important; 
+}
+
