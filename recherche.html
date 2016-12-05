@@ -40,89 +40,111 @@
         <li><a class="w3-padding-large" href="#tour">PROFIL</a></li>
         <li><a class="w3-padding-large" href="#tour">MES PAGES</a></li>
         <li><a class="w3-padding-large" href="#tour">MES CHEVAUX</a></li>
-        <li><a class="w3-padding-large" href="#contact">RECHERCHE</a></li>
+        <li><a class="w3-padding-large" href="./recherche.html">RECHERCHE</a></li>
       </ul>
     </div>
 
     <!-- Page content -->
-    <div class="w3-content">
-      <!-- The Tour Section -->
-      <div class="w3-black" id="tour"  style="margin-top: 100px;">
-        <div class="w3-container w3-padding-64">
-          <h2 class="w3-wide w3-center">Actualités</h2>
-          <p class="w3-opacity w3-center"><i>Retrouvez les dernières actualités du monde du cheval</i></p><br>
+    <div class="w3-content" style="margin-top: 100px;">
+      <div class="w3-panel w3-light-grey">
+        <h2 class="w3-text-shadow w3-center">Recherche Personalisée</h2>
+      </div>
+      
+      <!-- Formulaire de recherche -->
+      <form class="w3-container w3-card-4">
 
-          <div class="w3-row-padding w3-padding-32">
-
-            <div class="w3-third w3-margin-bottom">
-              New York
-              <div class="w3-container w3-white">
-                <p><b>New York</b></p>
-                <p class="w3-opacity">Fri 27 Nov 2016</p>
-                <p>Praesent tincidunt sed tellus ut rutrum sed vitae justo.</p>
-              </div>
-            </div>
-
-            <div class="w3-third w3-margin-bottom">
-              Paris
-              <div class="w3-container w3-white">
-                <p><b>Paris</b></p>
-                <p class="w3-opacity">Sat 28 Nov 2016</p>
-                <p>Praesent tincidunt sed tellus ut rutrum sed vitae justo.</p>
-              </div>
-            </div>
-
-            <div class="w3-third w3-margin-bottom">
-              San Francisco
-              <div class="w3-container w3-white">
-                <p><b>San Francisco</b></p>
-                <p class="w3-opacity">Sun 29 Nov 2016</p>
-                <p>Praesent tincidunt sed tellus ut rutrum sed vitae justo.</p>
-              </div>
-            </div>
-
+        <div class="w3-group">      
+          <input class="w3-input" type="text" placeholder="Saissisez votre recherche">
+        </div>
+       
+        <div class="w3-row">        
+          <div class="w3-center">
+            <h4 class="w3-center">Vous recherchez :</h4>
+            <input id="male" class="w3-radio" type="radio" name="gender" value="male" checked>
+            <label class="w3-validate">Un cheval</label>
+            <input id="female" class="w3-radio" type="radio" name="gender" value="female">
+            <label class="w3-validate">Un organisme</label>
+            <input id="unknown" class="w3-radio" type="radio" name="gender" value="">
+            <label class="w3-validate">Un évènement</label>
           </div>
         </div>
-      </div>
 
-      <!-- The Tour Section -->
-      <div class="w3-black" id="tour"  style="margin-top: 100px;">
-        <div class="w3-container w3-padding-64">
-          <h2 class="w3-wide w3-center">Mes Actualités</h2>
-          <p class="w3-opacity w3-center"><i>Retrouvez les dernières actualités de vos contacts</i></p><br>
-
-          <div class="w3-row-padding w3-padding-32">
-
-            <div class="w3-third w3-margin-bottom">
-              New York
-              <div class="w3-container w3-white">
-                <p><b>New York</b></p>
-                <p class="w3-opacity">Fri 27 Nov 2016</p>
-                <p>Praesent tincidunt sed tellus ut rutrum sed vitae justo.</p>
-              </div>
-            </div>
-
-            <div class="w3-third w3-margin-bottom">
-              Paris
-              <div class="w3-container w3-white">
-                <p><b>Paris</b></p>
-                <p class="w3-opacity">Sat 28 Nov 2016</p>
-                <p>Praesent tincidunt sed tellus ut rutrum sed vitae justo.</p>
-              </div>
-            </div>
-
-            <div class="w3-third w3-margin-bottom">
-              San Francisco
-              <div class="w3-container w3-white">
-                <p><b>San Francisco</b></p>
-                <p class="w3-opacity">Sun 29 Nov 2016</p>
-                <p>Praesent tincidunt sed tellus ut rutrum sed vitae justo.</p>
-              </div>
-            </div>
-
+        <div class="w3-row chevalResearch">        
+          <div class=" w3-half">
+            <h4 class="">Catégorie du cheval :</h4>
+            <input id="trait" class="w3-check" type="checkbox" checked="checked">
+            <label class="w3-validate">Cheval de trait</label>
+            <br>
+            <input id="selle" class="w3-check" type="checkbox">
+            <label class="w3-validate">Cheval de selle</label>
+            <br>
+            <input id="demi-selle" class="w3-check" type="checkbox">
+            <label class="w3-validate">Cheval demi-selle</label>
+            <br>
+            <h4 class="">Elligible pour une saillie :</h4>
+            <input id="saillieOui" class="w3-check" type="checkbox">
+            <label class="w3-validate">oui</label>
+            <input id="saillieNon" class="w3-check" type="checkbox">
+            <label class="w3-validate">Non</label>
+          </div>
+          <div class=" w3-half">
+            <h4 class="">Age du cheval :</h4>
+            <input id="age" class="w3-input" type="number" name="age" placeholder="Entrez l'age du cheval">
+            <h4 class="">Race :</h4>
+            <input id="race" class="w3-input" type="text" name="race" placeholder="Entrez la race du cheval">
           </div>
         </div>
-      </div>
+
+        <div class="w3-row organismeResearch">        
+          <div class=" w3-half">
+            <h4 class="">Type organisme :</h4>
+            <input id="haras" class="w3-check" type="checkbox" checked="checked">
+            <label class="w3-validate">Haras</label>
+            <br>
+            <input id="hippo" class="w3-check" type="checkbox">
+            <label class="w3-validate">Hippodrôme</label>
+            <br>
+            <input id="club" class="w3-check" type="checkbox">
+            <label class="w3-validate">Club-Hippique</label>
+            <br>
+            <input id="findus" class="w3-check" type="checkbox">
+            <label class="w3-validate">Boucherie</label>
+          </div>
+          <div class=" w3-half">
+            <h4 class="">Localisation :</h4>
+            <input id="localisation" class="w3-input" type="text" name="localisation" placeholder="Entrez le pays ou la région">
+          </div>
+        </div>
+
+        <div class="w3-row eventResearch">        
+          <div class=" w3-half">
+            <h4 class="">Type évènement :</h4>
+            <input id="haras" class="w3-check" type="checkbox" checked="checked">
+            <label class="w3-validate">Concour</label>
+            <br>
+            <input id="hippo" class="w3-check" type="checkbox">
+            <label class="w3-validate">Course</label>
+            <br>
+            <input id="club" class="w3-check" type="checkbox">
+            <label class="w3-validate">Journée Porte ouvertes</label>
+            <br>
+            <input id="findus" class="w3-check" type="checkbox">
+            <label class="w3-validate">Autres</label>
+          </div>
+          <div class=" w3-half">
+            <h4 class="">Localisation :</h4>
+            <input id="localisation" class="w3-input" type="text" name="localisation" placeholder="Entrez le pays ou la région">
+             <h4 class="">Date :</h4>
+            <input id="date" class="w3-input" type="date" name="date">
+            <label class="w3-validate">Date de debut</label>
+            <input id="date" class="w3-input" type="date" name="date">
+            <label class="w3-validate">Date de fin</label>
+          </div>
+        </div>
+
+
+        
+      </form>
 
     <!-- End Page Content -->
     </div>
