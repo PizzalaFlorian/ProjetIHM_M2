@@ -9,21 +9,10 @@ $(document).ready(function() {
     });
 
     $("#oui").click(function(e) {
-        $("#saillieFormAjout").show();     
+        $("#saillieFormAjout").show();
     });
     $("#non").click(function(e) {
-        $("#saillieFormAjout").hide();     
+        $("#saillieFormAjout").hide();
     });
-
-
-    
-
-    // if( $('input[id=oui]').is(':checked') ){
-    //      $("#saillieFormAjout").show();
-    // } else {
-    //     $("#saillieFormAjout").hide();
-    // }
-        
-
 
 });
