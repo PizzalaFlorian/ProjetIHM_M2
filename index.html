@@ -20,8 +20,8 @@
           <a class="w3-padding-large" href="javascript:void(0)" onclick="myFunction()" title="Toggle Navigation Menu"><i class="fa fa-bars"></i></a>
         </li>
         <li><a href="#" class="w3-hover-none w3-hover-text-grey w3-padding-large">ACCUEIL</a></li>
-        <li class="w3-hide-small"><a href="#band" class="w3-padding-large">ACTUALITÉS</a></li>
-        <li class="w3-hide-small w3-dropdown-hover">
+        <li class="w3-hide-small"><a href="./actu.html" class="w3-padding-large">ACTUALITÉS</a></li>
+        <li id="menuProfil" class="w3-hide-small w3-dropdown-hover">
           <a href="javascript:void(0)" class="w3-hover-none w3-padding-large" title="More">PROFIL<i class="fa fa-caret-down"></i></a>
           <div class="w3-dropdown-content w3-white w3-card-4">
             <a href="#">MES INFORMATIONS</a>
@@ -40,11 +40,13 @@
           </li>
         </form>
 
+        <li id="deconnexionButton" class="w3-hide-small w3-right"><a href="#" class="w3-padding-large w3-hover-red">Deconnexion</a></li>
+
         <li id="loginButton" class="w3-hide-small w3-right"><a href="#" class="w3-padding-large w3-hover-red">Login</a> </li>
         <li id="InscriptionButton" class="w3-hide-small w3-right"><a href="#" class="w3-padding-large w3-hover-red">Inscription</a> </li>
       </ul>
 
-      <div id="nav-login" class="w3-navbar w3-black w3-card-2 w3-left-align">
+      <div id="nav-login" class="w3-navbar w3-black w3-card-2 w3-left-align w3-hide-small">
         <form id="forLogin" class="w3-right">
           <label id="LabelCompte" for="Compte">Compte : </label>
           <input id="Compte">
@@ -54,7 +56,7 @@
         </form>
       </div>
 
-      <div id="nav-inscription" class="w3-navbar w3-black w3-card-2 w3-left-align">
+      <div id="nav-inscription" class="w3-navbar w3-black w3-card-2 w3-left-align w3-hide-small">
         <form id="forInscription" class="w3-right">
           <label id="LabelCompteInscrip" for="CompteInscrip">E-mail : </label>
           <input id="CompteInscrip">
@@ -89,29 +91,29 @@
           <div class="w3-row-padding w3-padding-32">
 
             <div class="w3-third w3-margin-bottom">
-              New York
+              <img src="image/johnnyJumper.gif" class="imageActu" alt="Johnny Jumper">
               <div class="w3-container w3-white">
-                <p><b>New York</b></p>
+                <p><b>Johnny Jumper</b></p>
                 <p class="w3-opacity">Fri 27 Nov 2016</p>
-                <p>Praesent tincidunt sed tellus ut rutrum sed vitae justo.</p>
+                <p>Fin de carrière, cherche boucher ! Urgent !</p>
               </div>
             </div>
 
             <div class="w3-third w3-margin-bottom">
-              Paris
+              Paulinne
               <div class="w3-container w3-white">
-                <p><b>Paris</b></p>
+                <p><b>Poupinne</b></p>
                 <p class="w3-opacity">Sat 28 Nov 2016</p>
-                <p>Praesent tincidunt sed tellus ut rutrum sed vitae justo.</p>
+                <p>Hmmm enfin de bon steack à manger :)</p>
               </div>
             </div>
 
             <div class="w3-third w3-margin-bottom">
-              San Francisco
+              Senior El Ombre
               <div class="w3-container w3-white">
-                <p><b>San Francisco</b></p>
+                <p><b>Zorro</b></p>
                 <p class="w3-opacity">Sun 29 Nov 2016</p>
-                <p>Praesent tincidunt sed tellus ut rutrum sed vitae justo.</p>
+                <p>Attention à vous mécréants, je vous surveille et suis prêt à signer de mon Z !</p>
               </div>
             </div>
 

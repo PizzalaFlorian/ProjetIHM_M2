@@ -37,22 +37,38 @@ $(document).ready(function () {
     });
 
     $("button#bouttonInscr").click(function (e) {
-        e.preventDefault()
-        $("div.w3-top div#nav-inscription").hide();
-        $("div.w3-top div#nav-login").hide();
-
-        $("div#actualiteLog").show();
-        $("div#actualite").hide();
+        e.preventDefault();
+        seConnecte();
     });
 
     $("button#bouttonLog").click(function (e) {
-        e.preventDefault()
+        e.preventDefault();
+        seConnecte();
+    });
+
+    $("li#deconnexionButton a").click(function (e) {
+        $("#deconnexionButton").hide();
+        $("#loginButton").show();
+        $("#InscriptionButton").show();
+
+        $("#menuProfil").hide();
+        $("div#actualiteLog").hide();
+        $("div#actualite").show();
+    });
+
+    function seConnecte() {
+
         $("div.w3-top div#nav-inscription").hide();
         $("div.w3-top div#nav-login").hide();
 
         $("div#actualiteLog").show();
         $("div#actualite").hide();
-    });
+
+        $("#menuProfil").show();
+        $("#deconnexionButton").show();
+        $("#loginButton").hide();
+        $("#InscriptionButton").hide();
+    }
 
     $("#barreRecherche").submit(function (e) {
        e.preventDefault();
