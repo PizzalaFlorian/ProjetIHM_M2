@@ -9,6 +9,7 @@
   <link rel="stylesheet" type="text/css" href="assets/css/main.css">
   <script src="http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
   <script type="text/javascript" src="assets/js/main.js"> </script>
+  <script type="text/javascript" src="assets/js/recherche.js"> </script>
 
   <!-- favicon -->
   <link rel="apple-touch-icon" sizes="57x57" href="./icon/apple-icon-57x57.png">
@@ -100,23 +101,23 @@
         <div class="w3-group">      
           <input class="w3-input" type="text" placeholder="Saissisez votre recherche">
         </div>
-       
-        <div class="w3-row">        
+       <button id="toogle" class="w3-black"> >> recherche avancée</button>
+        <div id="advanced" class="w3-row">        
           <div class="w3-center">
             <h4 class="w3-center">Vous recherchez :</h4>
-            <input id="male" class="w3-radio" type="radio" name="gender" value="male" checked>
+            <input id="cheval" class="w3-radio" type="radio" name="recherche" value="cheval">
             <label class="w3-validate">Un cheval</label>
-            <input id="female" class="w3-radio" type="radio" name="gender" value="female">
+            <input id="orga" class="w3-radio" type="radio" name="recherche" value="orga">
             <label class="w3-validate">Un organisme</label>
-            <input id="unknown" class="w3-radio" type="radio" name="gender" value="">
+            <input id="event" class="w3-radio" type="radio" name="recherche" value="event">
             <label class="w3-validate">Un évènement</label>
           </div>
         </div>
 
-        <div class="w3-row chevalResearch">        
+        <div id="chevalResearch" class="w3-row">        
           <div class=" w3-half">
             <h4 class="">Catégorie du cheval :</h4>
-            <input id="trait" class="w3-check" type="checkbox" checked="checked">
+            <input id="trait" class="w3-check" type="checkbox">
             <label class="w3-validate">Cheval de trait</label>
             <br>
             <input id="selle" class="w3-check" type="checkbox">
@@ -139,7 +140,7 @@
           </div>
         </div>
 
-        <div class="w3-row organismeResearch">        
+        <div id="organismeResearch" class="w3-row">        
           <div class=" w3-half">
             <h4 class="">Type organisme :</h4>
             <input id="haras" class="w3-check" type="checkbox" checked="checked">
@@ -160,7 +161,7 @@
           </div>
         </div>
 
-        <div class="w3-row eventResearch">        
+        <div id="eventResearch" class="w3-row">        
           <div class=" w3-half">
             <h4 class="">Type évènement :</h4>
             <input id="haras" class="w3-check" type="checkbox" checked="checked">
@@ -185,9 +186,10 @@
             <label class="w3-validate">Date de fin</label>
           </div>
         </div>
-
-
-        
+        <br/>
+        <center>
+          <button type="submit" class="w3-center">Rechercher</button>
+        </center>
       </form>
 
     <!-- End Page Content -->
