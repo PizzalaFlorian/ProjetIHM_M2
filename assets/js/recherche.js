@@ -26,6 +26,15 @@ $(document).ready(function() {
         $("#advanced").show();
     });
 
+    // A revoir la fonction
+    $("#saillieOui").click(function (e) {
+        if($(".saillieOui").is(":visiable"))
+            $(".saillieOui").hide();
+        else
+            $(".saillieOui").show();
+    });
+
+
     // $("div ul li#InscriptionButton").click(function () {
     //     if( $("div.w3-top div#nav-inscription").is(":visible")) {
     //         $("div.w3-top div#nav-inscription").hide();

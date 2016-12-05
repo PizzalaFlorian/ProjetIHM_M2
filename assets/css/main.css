@@ -75,10 +75,15 @@ body {
 	margin-left: 15px;
     display: inline-flex;
     align-items: flex-start;
+	min-height: 280px;
 }
 
 .actuPageActu {
     display: inline-flex;
+}
+
+.saillieOui {
+	display: none;
 }
 
 .flexCenter {
