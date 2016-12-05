@@ -7,7 +7,9 @@
   <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
   <link rel="stylesheet" type="text/css" href="assets/css/main.css">
+  <script src="http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
   <script type="text/javascript" src="assets/js/main.js"> </script>
+
 
   <body>
 
@@ -27,10 +29,32 @@
             <a href="#">MES CHEVAUX</a>
           </div>
         </li>
-        <li class="w3-hide-small"><a href="#contact" class="w3-padding-large">RECHERCHE</a></li>
+        <li class="w3-hide-small"><a href="./recherche.html" class="w3-padding-large">RECHERCHE</a></li>
         
         <li class="w3-hide-small w3-right"><a href="javascript:void(0)" class="w3-padding-large w3-hover-red"><i class="fa fa-search"></i></a></li>
+        <li id="loginButton" class="w3-hide-small w3-right"><a href="#" class="w3-padding-large w3-hover-red">Login</a> </li>
+        <li id="InscriptionButton" class="w3-hide-small w3-right"><a href="#" class="w3-padding-large w3-hover-red">Inscription</a> </li>
       </ul>
+
+      <div id="nav-login" class="w3-navbar w3-black w3-card-2 w3-left-align">
+        <form id="forLogin" class="w3-right">
+          <label id="LabelCompte" for="Compte">Compte : </label>
+          <input id="Compte">
+          <label id="LabelMdp" for="Mdp">Mot de passe : </label>
+          <input id="Mdp">
+        </form>
+      </div>
+
+      <div id="nav-inscription" class="w3-navbar w3-black w3-card-2 w3-left-align">
+        <form id="forInscription" class="w3-right">
+          <label id="LabelCompteInscrip" for="CompteInscrip">E-mail : </label>
+          <input id="CompteInscrip">
+          <label id="LabelMdpInscrip" for="MdpInscrip">Mot de passe : </label>
+          <input id="MdpInscrip">
+          <label id="LabelMdpInscripConfir" for="MdpInscripConfir">Confirmation : </label>
+          <input id="MdpInscripConfir">
+        </form>
+      </div>
     </div>
 
     <!-- Navbar on small screens -->
@@ -40,14 +64,14 @@
         <li><a class="w3-padding-large" href="#tour">PROFIL</a></li>
         <li><a class="w3-padding-large" href="#tour">MES PAGES</a></li>
         <li><a class="w3-padding-large" href="#tour">MES CHEVAUX</a></li>
-        <li><a class="w3-padding-large" href="#contact">RECHERCHE</a></li>
+        <li><a class="w3-padding-large" href="./recherche.html">RECHERCHE</a></li>
       </ul>
     </div>
 
     <!-- Page content -->
     <div class="w3-content">
       <!-- The Tour Section -->
-      <div class="w3-black" id="tour"  style="margin-top: 100px;">
+      <div class="w3-black" id="actualite"  style="margin-top: 100px;">
         <div class="w3-container w3-padding-64">
           <h2 class="w3-wide w3-center">Actualités</h2>
           <p class="w3-opacity w3-center"><i>Retrouvez les dernières actualités du monde du cheval</i></p><br>
@@ -86,7 +110,7 @@
       </div>
 
       <!-- The Tour Section -->
-      <div class="w3-black" id="tour"  style="margin-top: 100px;">
+      <div class="w3-black" id="actualiteLog"  style="margin-top: 100px;">
         <div class="w3-container w3-padding-64">
           <h2 class="w3-wide w3-center">Mes Actualités</h2>
           <p class="w3-opacity w3-center"><i>Retrouvez les dernières actualités de vos contacts</i></p><br>

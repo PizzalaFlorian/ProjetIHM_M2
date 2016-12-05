@@ -8,3 +8,29 @@ function myFunction() {
         x.className = x.className.replace(" w3-show", "");
     }
 }
+
+$(document).ready(function () {
+
+    $("div ul li#loginButton").click(function () {
+        if( $("div.w3-top div#nav-login").is(":visible")) {
+            $("div.w3-top div#nav-login").hide();
+        }
+        else {
+            $("div.w3-top div#nav-login").show();
+            $("div.w3-top div#nav-inscription").hide();
+        }
+
+    });
+
+    $("div ul li#InscriptionButton").click(function () {
+        if( $("div.w3-top div#nav-inscription").is(":visible")) {
+            $("div.w3-top div#nav-inscription").hide();
+        }
+        else {
+            $("div.w3-top div#nav-inscription").show();
+            $("div.w3-top div#nav-login").hide();
+        }
+
+    });
+
+});

@@ -15,3 +15,10 @@ body {
 	background-color:#2D1818 !important; 
 }
 
+#actualiteLog {
+	display: none;
+}
+
+#forLogin {
+	padding: 10px;
+}
