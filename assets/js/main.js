@@ -9,7 +9,16 @@ function myFunction() {
     }
 }
 
+var connecter = false;
+
 $(document).ready(function () {
+
+    if(connecter) {
+        $("#menuProfil").show();
+        $("#deconnexionButton").show();
+        $("#loginButton").hide();
+        $("#InscriptionButton").hide();
+    }
 
     $("div.w3-top div#nav-inscription").hide();
     $("div.w3-top div#nav-login").hide();
@@ -47,6 +56,9 @@ $(document).ready(function () {
     });
 
     $("li#deconnexionButton a").click(function (e) {
+
+        connecter = false;
+
         $("#deconnexionButton").hide();
         $("#loginButton").show();
         $("#InscriptionButton").show();
@@ -57,6 +69,8 @@ $(document).ready(function () {
     });
 
     function seConnecte() {
+
+        connecter = true;
 
         $("div.w3-top div#nav-inscription").hide();
         $("div.w3-top div#nav-login").hide();
