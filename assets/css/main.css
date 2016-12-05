@@ -76,7 +76,13 @@ body {
     display: inline-flex;
 }
 
-.flex {
+.flexCenter {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.flex{
     display: flex;
     flex-direction: row;
 }
@@ -102,21 +108,21 @@ body {
 }
 
 .mr5 {
-    margin-right: : 5px;
+    margin-right: 5px;
 }
 
 .mr10 {
-    margin-right: : 10px;
+    margin-right: 10px;
 }
 
 .mr15 {
-    margin-right: : 15px;
+    margin-right: 15px;
 }
 
 .mr20 {
-    margin-right: : 20px;
+    margin-right: 20px;
 }
 
 .mr50 {
-    margin-right: : 50px;
+    margin-right: 50px;
 }
