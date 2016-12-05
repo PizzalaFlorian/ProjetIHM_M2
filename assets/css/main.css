@@ -52,7 +52,7 @@ body {
 	color: white;
 }
 
-#fileActu div {
+#fileActu > div {
 	display: flex;
 	height: auto;
 }
@@ -65,7 +65,11 @@ body {
 	display: inline-flex;
 	width: 280px;
 	height: 280px;
-	align-items: center;
+	align-items: flex-end;
+}
+
+.infoFileActu {
+	margin-left: 15px;
 }
 
 .actuPageActu {

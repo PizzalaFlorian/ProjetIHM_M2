@@ -87,6 +87,6 @@ $(document).ready(function () {
     $("#barreRecherche").submit(function (e) {
        e.preventDefault();
         $(location).attr("href", "./recherche.html");
-    });
 
+    });
 });
