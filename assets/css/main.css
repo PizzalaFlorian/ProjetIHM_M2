@@ -71,3 +71,8 @@ body {
 .actuPageActu {
 	display: inline-flex;
 }
+
+.flex{
+	display: flex;
+	flex-direction: row;
+}
