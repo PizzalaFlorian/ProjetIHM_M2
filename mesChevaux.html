@@ -8,7 +8,8 @@
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 <link rel="stylesheet" type="text/css" href="assets/css/main.css">
 <script src="http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
-<script type="text/javascript" src="assets/js/main.js">
+<script type="text/javascript" src="assets/js/main.js"></script>
+<script type="text/javascript" src="assets/js/cheval.js">
 </script>
 <!-- favicon -->
 <link rel="apple-touch-icon" sizes="57x57" href="./icon/apple-icon-57x57.png">
@@ -93,13 +94,63 @@
     <!-- Page content -->
     <div class="w3-content" style="margin-top: 100px;">
         <div class="w3-panel w3-light-grey">
-            <h2 class="w3-text-shadow w3-center">Mes cheveaux</h2>
+            <h2 class="w3-text-shadow w3-center">Mes chevaux</h2>
         </div>
         <div class="w3-card-2 pad10">
-          <div class="w3-center flexCenter">
-            <h4 class="mr15"> Ajouter un cheval </h4>
-            <a class="w3-btn-floating-large w3-ripple w3-black ml15">+</a>
-          </div>
+            <div class="w3-center flexCenter">
+                <h4 class="mr15"> Ajouter un cheval </h4>
+                <a id="openFormCheval" class="w3-btn-floating-large w3-ripple w3-black ml15">+</a>
+            </div>
+            <div id="formAjoutCheval">
+                <br/>
+                <form class="w3-container w3-card-4">
+                    <div class="w3-group">
+                        <input class="w3-input" name="nomCheval" type="text" placeholder="Saissisez le nom de votre cheval" required>
+                        <label class="w3-validate" for="nomCheval">Nom du cheval</label>
+                    </div>
+                    <div class="w3-group">
+                        <input class="w3-input" name="race" type="text" placeholder="Saissisez la race de votre cheval" required>
+                        <label class="w3-validate" for="race">Race du cheval</label>
+                    </div>
+                    <div class="w3-group">
+                        <input id="age" class="w3-input" type="date" name="naissance" required>
+                        <label class="w3-validate" for="race">Date de naissance du cheval</label>
+                    </div>
+                    <div id="chevalResearch" class="w3-row">
+                        <div class=" w3-half">
+                            <h4 class="">Catégorie du cheval :</h4>
+                            <input id="trait" class="w3-check" type="checkbox">
+                            <label class="w3-validate" for="trait">Cheval de trait</label>
+                            <br>
+                            <input id="selle" class="w3-check" type="checkbox">
+                            <label class="w3-validate" for="selle">Cheval de selle</label>
+                            <br>
+                            <input id="demi-selle" class="w3-check" type="checkbox">
+                            <label class="w3-validate" for="demi-selle">Cheval demi-selle</label>
+                        </div>
+                        <div class="w3-half">
+                            <h4 class="">Elligible pour une saillie :</h4>
+                            <input id="oui" name="eligible" value="oui" class="w3-radio" type="radio">
+                            <label class="w3-validate" for="oui">Oui</label>
+                            <br/>
+                            <input id="non" name="eligible" value="non" class="w3-radio" type="radio">
+                            <label class="w3-validate" for="non">Non</label>
+                            <div id="saillieFormAjout">
+                                <h4> Type saillie : </h4>
+                                <input id="trad" class="w3-check" type="checkbox">
+                                <label class="w3-validate" for="trad">Saillie Traditionnelle</label>
+                                <br/>
+                                <input id="artificielle" class="w3-check" type="checkbox">
+                                <label class="w3-validate" for="artificielle">Saillie Artificielle</label>
+                            </div>
+                        </div>
+                    </div>
+                    <br/>
+                    <center>
+                        <button type="submit" class="w3-center">Ajouter</button>
+                    </center>
+                </form>
+            </div>
         </div>
         <!-- End Page Content -->
     </div>
