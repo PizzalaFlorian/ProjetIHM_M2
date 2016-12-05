@@ -36,4 +36,27 @@ $(document).ready(function () {
 
     });
 
+    $("button#bouttonInscr").click(function (e) {
+        e.preventDefault()
+        $("div.w3-top div#nav-inscription").hide();
+        $("div.w3-top div#nav-login").hide();
+
+        $("div#actualiteLog").show();
+        $("div#actualite").hide();
+    });
+
+    $("button#bouttonLog").click(function (e) {
+        e.preventDefault()
+        $("div.w3-top div#nav-inscription").hide();
+        $("div.w3-top div#nav-login").hide();
+
+        $("div#actualiteLog").show();
+        $("div#actualite").hide();
+    });
+
+    $("#barreRecherche").submit(function (e) {
+       e.preventDefault();
+        $(location).attr("href", "./recherche.html");
+    });
+
 });

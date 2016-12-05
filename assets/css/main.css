@@ -26,3 +26,23 @@ body {
 #forInscription {
 	padding: 10px;
 }
+
+#idForRecherche {
+	width: 250px;
+}
+
+#idForRecherche input {
+	display: inline-block !important;
+	width: 150px;
+}
+
+#idForRecherche a {
+	display: inline-block !important;
+}
+
+#myInputRecherche {
+	border-radius: 10px;
+	margin-right: 10px;
+	background-color: #2D1818;
+	color: white;
+}
