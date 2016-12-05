@@ -11,6 +11,9 @@ function myFunction() {
 
 $(document).ready(function () {
 
+    $("div.w3-top div#nav-inscription").hide();
+    $("div.w3-top div#nav-login").hide();
+
     $("div ul li#loginButton").click(function () {
         if( $("div.w3-top div#nav-login").is(":visible")) {
             $("div.w3-top div#nav-login").hide();
