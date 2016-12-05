@@ -1,67 +1,78 @@
 /*Import template*/
+
 body {
-	font-family: "Lato", sans-serif
-}
-.mySlides {
-	display: none
+    font-family: "Lato", sans-serif
 }
 
-#navDemo{
-	margin-top:46px
+.mySlides {
+    display: none
 }
+
+#navDemo {
+    margin-top: 46px
+}
+
 
 /*Redéfinition*/
-.w3-black{
-	background-color:#2D1818 !important; 
+
+.w3-black {
+    background-color: #2D1818 !important;
 }
 
 #deconnexionButton,
 #menuProfil {
-	display: none;
+    display: none;
 }
 
 #actualiteLog {
-	display: none;
+    display: none;
 }
 
 #forLogin {
-	padding: 10px;
+    padding: 10px;
 }
 
 #forInscription {
-	padding: 10px;
+    padding: 10px;
 }
 
 #idForRecherche {
-	width: 250px;
+    width: 250px;
 }
 
 #idForRecherche input {
-	display: inline-block !important;
-	width: 150px;
+    display: inline-block !important;
+    width: 150px;
 }
 
 #idForRecherche a {
-	display: inline-block !important;
+    display: inline-block !important;
 }
 
 #myInputRecherche {
-	border-radius: 10px;
-	margin-right: 10px;
-	background-color: #2D1818;
-	color: white;
+    border-radius: 10px;
+    margin-right: 10px;
+    background-color: #2D1818;
+    color: white;
 }
 
+<<<<<<< HEAD
 #fileActu > div {
 	display: flex;
 	height: auto;
+=======
+#fileActu div {
+    display: flex;
+    height: auto;
+>>>>>>> origin/master
 }
 
 .imageActu {
-	width: 294px;
+    width: 294px;
 }
 
 .imageActuFilleActu {
+<<<<<<< HEAD
 	display: inline-flex;
 	width: 280px;
 	height: 280px;
@@ -70,8 +81,65 @@ body {
 
 .infoFileActu {
 	margin-left: 15px;
+=======
+    display: inline-flex;
+    width: 280px;
+    height: 280px;
+    align-items: center;
+>>>>>>> origin/master
 }
 
 .actuPageActu {
-	display: inline-flex;
+    display: inline-flex;
+}
+
+.flexCenter {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.flex{
+    display: flex;
+    flex-direction: row;
+}
+
+.ml5 {
+    margin-left: 5px;
+}
+
+.ml10 {
+    margin-left: 10px;
+}
+
+.ml15 {
+    margin-left: 15px;
+}
+
+.ml20 {
+    margin-left: 20px;
+}
+
+.ml50 {
+    margin-left: 50px;
+}
+
+.mr5 {
+    margin-right: 5px;
+}
+
+.mr10 {
+    margin-right: 10px;
+}
+
+.mr15 {
+    margin-right: 15px;
+}
+
+.mr20 {
+    margin-right: 20px;
+}
+
+.mr50 {
+    margin-right: 50px;
 }
