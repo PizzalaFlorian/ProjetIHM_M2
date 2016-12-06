@@ -1,11 +1,21 @@
 $(document).ready(function() {
 
+    var toogle = true;
+
     $("#formAjoutCheval").hide();
     $("#saillieFormAjout").hide();
 
     $("#openFormCheval").click(function(e) {
         e.preventDefault();
-        $("#formAjoutCheval").show();
+        if(toogle){
+            $("#formAjoutCheval").show();
+            toogle = false;
+        }
+        else{
+             $("#formAjoutCheval").hide();
+             toogle = true;
+        }
+        
     });
 
     $("#oui").click(function(e) {
