@@ -15,4 +15,7 @@ $(document).ready(function() {
         $("#saillieFormAjout").hide();
     });
 
+    $("#reset").click(function(e) {
+        $("#formAjoutCheval").hide();
+    });
 });

@@ -16,7 +16,7 @@ body {
 /*Redéfinition*/
 
 .w3-black {
-    background-color: #2D1818 !important;
+    background-color: #3A2020 !important;
 }
 
 #deconnexionButton,
@@ -155,4 +155,22 @@ body {
 
 .mr50 {
     margin-right: 50px;
+}
+
+textarea{
+    width: 100%;
+}
+
+.sub-btn{
+    margin:10px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+.sub-btn > button{
+    margin: 10px;
+}
+
+.m5{
+    margin: 5px;
 }
