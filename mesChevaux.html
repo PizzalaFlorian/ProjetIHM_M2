@@ -109,6 +109,13 @@
                         <input class="w3-input" name="nomCheval" type="text" placeholder="Saissisez le nom de votre cheval" required>
                     </div>
                     <div class="w3-group">
+                        <p class="w3-validate">Sexe :</p>
+                        <input id="oui" name="eligible" value="oui" class="w3-radio" type="radio">
+                        <label class="w3-validate" for="oui">Male</label>
+                        <input id="non" name="eligible" value="non" class="w3-radio" type="radio">
+                        <label class="w3-validate" for="non">Femele</label>
+                    </div>
+                    <div class="w3-group">
                         <label class="w3-validate" for="race">Race du cheval</label>
                         <input class="w3-input" name="race" type="text" placeholder="Saissisez la race de votre cheval" required>
                     </div>
@@ -208,14 +215,14 @@
             <div class="fiche w3-card-8">
                 <!-- Bouton et actions -->
                 <header class="w3-container w3-teal w3-black">
-               <img src="image/horse.png" class=" w3-image w3-round"/> Buchéphale l'indomptable
+                    <img src="image/horse.png" class=" w3-image w3-round" /> Buchéphale l'indomptable
                 </header>
                 <!--Content-->
                 <div>
                     <br/>
                     <section class="w3-container">
                         <div class="w3-third">
-                            <img src="image/pic01.jpg" class=" w3-image w3-round"/>
+                            <img src="image/pic01.jpg" class=" w3-image w3-round" />
                         </div>
                         <div class="w3-twothird w3-padding">
                             <ul class="w3-ul">
@@ -228,9 +235,19 @@
                             </ul>
                         </div>
                     </section>
+                    <hr/>
                     <section class="w3-container">
                         <div class="w3-third">
-                            Prix
+                            <strong> Prix remporter </strong>
+                            <ul class="w3-ul">
+                                <li>Grande belette de winchester</li>
+                                <li>Bataille d'Hydapse</li>
+                            </ul>
+                            <br/>
+                            <a class="w3-btn w3-white w3-border"> Acte de Naissance </a>
+                            <br/>
+                            <br/>
+                            <a class="w3-btn w3-white w3-border"> Bilans Vétérinaires </a>
                         </div>
                         <div class="w3-twothird w3-padding">
                             <strong> Biographie </strong>
@@ -254,7 +271,6 @@
         <i class="fa fa-twitter w3-hover-text-light-blue"></i>
         <i class="fa fa-linkedin w3-hover-text-indigo"></i>
         <p class="w3-medium">Powered by <a href="http://www.w3schools.com/w3css/default.asp" target="_blank">w3.css</a></p>
-
     </footer>
 </body>
 
