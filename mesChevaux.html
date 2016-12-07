@@ -110,10 +110,10 @@
                     </div>
                     <div class="w3-group">
                         <p class="w3-validate">Sexe :</p>
-                        <input name="sexe" value="oui" class="w3-radio" type="radio">
-                        <label class="w3-validate" for="oui">Male</label>
-                        <input name="sexe" value="non" class="w3-radio" type="radio">
-                        <label class="w3-validate" for="non">Femele</label>
+                        <input id="male" name="sexe" value="oui" class="w3-radio" type="radio">
+                        <label class="w3-validate" for="male">Male</label>
+                        <input id="femelle" name="sexe" value="non" class="w3-radio" type="radio">
+                        <label class="w3-validate" for="femelle">Femelle</label>
                     </div>
                     <div class="w3-group">
                         <label class="w3-validate" for="race">Race du cheval</label>
@@ -125,10 +125,10 @@
                     </div>
                     <div class="w3-group">
                         <p class="w3-validate">Staut :</p>
-                        <input name="statut" value="oui" class="w3-radio" type="radio">
-                        <label class="w3-validate" for="oui">Vivant</label>
-                        <input name="statut" value="non" class="w3-radio" type="radio">
-                        <label class="w3-validate" for="non">Décédé</label>
+                        <input id="vivant" name="statut" value="vivant" class="w3-radio" type="radio">
+                        <label class="w3-validate" for="vivant">Vivant</label>
+                        <input id="canne" name="statut" value="canne" class="w3-radio" type="radio">
+                        <label class="w3-validate" for="canne">Décédé</label>
                     </div>
                     <hr>
                     <div id="chevalResearch" class="w3-row">
@@ -208,10 +208,38 @@
                                         <div class="w3-half w3-card-2 w3-center">
                                             <h4>Père</h4>
                                             <a id="papa" class="w3-btn-floating-large w3-ripple w3-black">+</a>
+                                            <div id="papaOuté">
+                                              <h4> Père : </h4>
+                                              <select name="carlist" form="carform">
+                                                <option value="volvo">Henri IV</option>
+                                                <option value="saab">Ourasi le Roi fénéant</option>
+                                                <option value="opel">Marc-Olivier</option>
+                                              </select>
+                                              <br/> Ou
+                                              <br/>
+                                              <input id="artificielle" class="" type="text" name="papaT" placeholder="Entrez nom cheval" />
+                                              <br/>
+                                              <br/>
+                                              <button type="submit" class="w3-btn w3-black"> Ajouter</button>
+                                            </div>
                                         </div>
                                         <div class="w3-half w3-card-2 w3-center">
                                             <h4>Mère</h4>
                                             <a id="maman" class="w3-btn-floating-large w3-ripple w3-black">+</a>
+                                            <div id="papaOuté">
+                                              <h4> Mère : </h4>
+                                              <select name="carlist" form="carform">
+                                                <option value="volvo">Stéphanie IV</option>
+                                                <option value="saab">Mimi-matie</option>
+                                                <option value="opel">Claire Chazoul</option>
+                                              </select>
+                                              <br/> Ou
+                                              <br/>
+                                              <input id="artificielle" class="" type="text" name="papaT" placeholder="Entrez nom cheval" />
+                                              <br/>
+                                              <br/>
+                                              <button type="submit" class="w3-btn w3-black"> Ajouter</button>
+                                            </div>
                                         </div>
                                     </div>
                                     <div class="w3-container">
