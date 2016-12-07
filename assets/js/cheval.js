@@ -10,6 +10,7 @@ $(document).ready(function() {
     $("#papaOuté").hide();
     $("#mamaOuté").hide();
     $("#momoOuté").hide();
+    $("#papaCache").hide();
 
     $("#openFormCheval").click(function(e) {
         e.preventDefault();
@@ -21,6 +22,16 @@ $(document).ready(function() {
              $("#formAjoutCheval").hide();
              toogle = true;
         }
+    });
+    $("#addPapa").click(function(e) {
+        e.preventDefault();
+        $("#papaCache").show();
+        $("#papaOuté").hide();
+        $("#papa").hide();
+    });
+    
+    $("#raPapa").click(function(e) {
+        $("#papa").show();
     });
 
     $("#papa").click(function(e) {
