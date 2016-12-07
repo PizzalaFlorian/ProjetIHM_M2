@@ -84,6 +84,8 @@ body {
     display: inline-flex;
 }
 
+.actuPageActu
+
 .saillieOui {
 	display: none;
 }
@@ -179,4 +181,29 @@ textarea{
 
 .tlj{
     text-align: justify;
+}
+
+
+@media screen and (max-width: 640px) {
+
+    .imageActu {
+        width: 257px;
+    }
+
+    .infoFileActu {
+        margin-left: 15px;
+        display: inline-flex;
+        align-items: flex-start;
+        min-height: 280px;
+        display: flex !important;
+        flex-direction: row !important;
+        flex-wrap: wrap !important;
+    }
+
+    .actuPageActu {
+        display: inline-flex;
+        display: flex !important;
+        flex-direction: row !important;
+        flex-wrap: wrap !important;
+    }
 }
