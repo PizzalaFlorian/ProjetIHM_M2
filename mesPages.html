@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html>
+<title>Le cheval c'est trop cool !</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="http://www.w3schools.com/lib/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" type="text/css" href="assets/css/main.css">
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
+<script type="text/javascript" src="assets/js/main.js"></script>
+<script type="text/javascript" src="assets/js/mesPages.js">
+</script>
+<!-- favicon -->
+<link rel="apple-touch-icon" sizes="57x57" href="./icon/apple-icon-57x57.png">
+<link rel="apple-touch-icon" sizes="60x60" href="./icon/apple-icon-60x60.png">
+<link rel="apple-touch-icon" sizes="72x72" href="./icon/apple-icon-72x72.png">
+<link rel="apple-touch-icon" sizes="76x76" href="./icon/apple-icon-76x76.png">
+<link rel="apple-touch-icon" sizes="114x114" href="./icon/apple-icon-114x114.png">
+<link rel="apple-touch-icon" sizes="120x120" href="./icon/apple-icon-120x120.png">
+<link rel="apple-touch-icon" sizes="144x144" href="./icon/apple-icon-144x144.png">
+<link rel="apple-touch-icon" sizes="152x152" href="./icon/apple-icon-152x152.png">
+<link rel="apple-touch-icon" sizes="180x180" href="./icon/apple-icon-180x180.png">
+<link rel="icon" type="image/png" sizes="192x192" href="./icon/android-icon-192x192.png">
+<link rel="icon" type="image/png" sizes="32x32" href="./icon/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="96x96" href="./icon/favicon-96x96.png">
+<link rel="icon" type="image/png" sizes="16x16" href="./icon/favicon-16x16.png">
+<link rel="manifest" href="./icon/manifest.json">
+<meta name="msapplication-TileColor" content="#ffffff">
+<meta name="msapplication-TileImage" content="./icon/ms-icon-144x144.png">
+<meta name="theme-color" content="#ffffff">
+
+<body>
+<!-- Navbar -->
+<div class="w3-top">
+    <ul class="w3-navbar w3-black w3-card-2 w3-left-align">
+        <li class="w3-hide-medium w3-hide-large w3-opennav w3-right">
+            <a class="w3-padding-large" href="javascript:void(0)" onclick="myFunction()" title="Toggle Navigation Menu"><i class="fa fa-bars"></i></a>
+        </li>
+        <li><a href="index.html" class="w3-hover-none w3-hover-text-grey w3-padding-large">ACCUEIL</a></li>
+        <li class="w3-hide-small"><a href="./actu.html" class="w3-padding-large">ACTUALITÉS</a></li>
+        <li id="menuProfil" class="w3-hide-small w3-dropdown-hover">
+            <a href="javascript:void(0)" class="w3-hover-none w3-padding-large" title="More">PROFIL<i class="fa fa-caret-down"></i></a>
+            <div class="w3-dropdown-content w3-white w3-card-4">
+                <a href="mesInfo.html">MES INFORMATIONS</a>
+                <a href="mesPages.html">MES PAGES</a>
+                <a href="mesChevaux.html">MES CHEVAUX</a>
+            </div>
+        </li>
+        <li class="w3-hide-small"><a href="./recherche.html" class="w3-padding-large">RECHERCHE</a></li>
+        <form id="barreRecherche">
+            <li id="idForRecherche" class="w3-hide-small w3-right">
+                <input id="myInputRecherche">
+                <a href="./recherche.html" class="w3-padding-large w3-hover-red">
+                    <i class="fa fa-search"></i>
+                </a>
+            </li>
+        </form>
+        <li id="deconnexionButton" class="w3-hide-small w3-right"><a href="#" class="w3-padding-large w3-hover-red">Deconnexion</a></li>
+        <li id="loginButton" class="w3-hide-small w3-right"><a href="#" class="w3-padding-large w3-hover-red">Login</a> </li>
+        <li id="InscriptionButton" class="w3-hide-small w3-right"><a href="#" class="w3-padding-large w3-hover-red">Inscription</a> </li>
+    </ul>
+    <div id="nav-login" class="w3-navbar w3-black w3-card-2 w3-left-align w3-hide-small">
+        <form id="forLogin" class="w3-right">
+            <label id="LabelCompte" for="Compte">Compte : </label>
+            <input id="Compte">
+            <label id="LabelMdp" for="Mdp">Mot de passe : </label>
+            <input id="Mdp">
+            <button id="bouttonLog">Connexion</button>
+        </form>
+    </div>
+    <div id="nav-inscription" class="w3-navbar w3-black w3-card-2 w3-left-align w3-hide-small">
+        <form id="forInscription" class="w3-right">
+            <label id="LabelCompteInscrip" for="CompteInscrip">E-mail : </label>
+            <input id="CompteInscrip">
+            <label id="LabelMdpInscrip" for="MdpInscrip">Mot de passe : </label>
+            <input id="MdpInscrip">
+            <label id="LabelMdpInscripConfir" for="MdpInscripConfir">Confirmation : </label>
+            <input id="MdpInscripConfir">
+            <button id="bouttonInscr">Inscription</button>
+        </form>
+    </div>
+</div>
+<!-- Navbar on small screens -->
+<div id="navDemo" class="w3-hide w3-hide-large w3-hide-medium w3-top">
+    <ul class="w3-navbar w3-left-align w3-black">
+        <li><a class="w3-padding-large" href="actu.html">ACTUALITÉS</a></li>
+        <li><a class="w3-padding-large" href="mesInfo.html">PROFIL</a></li>
+        <li><a class="w3-padding-large" href="mesPages.html">MES PAGES</a></li>
+        <li><a class="w3-padding-large" href="mesCheveaux.html">MES CHEVAUX</a></li>
+        <li><a class="w3-padding-large" href="./recherche.html">RECHERCHE</a></li>
+    </ul>
+</div>
+<!-- Page content -->
+<div class="w3-content" style="margin-top: 100px;">
+    <div class="w3-panel w3-light-grey">
+        <h2 class="w3-text-shadow w3-center">MES PAGES</h2>
+    </div>
+    <div class="w3-card-2 pad10">
+        <div class="w3-center flexCenter">
+            <h4 class="mr15"> Ajouter un organisme </h4>
+            <a id="openFormOrga" class="w3-btn-floating-large w3-ripple w3-black ml15">+</a>
+        </div>
+        <div id="formAjoutOrga">
+            <br/>
+            <form class="w3-container w3-card-4">
+                <div class="w3-group">
+                    <label class="w3-validate" for="nomOrga">Nom de l'organisme</label>
+                    <input class="w3-input" id="nomOrga" name="nomOrga" type="text" placeholder="Saissisez le nom de votre organisme" required>
+                </div>
+                <div class="w3-group">
+                    <p class="w3-validate">Statut de l'organisme :</p>
+                    <input id="haras" name="haras" value="haras" class="w3-radio" type="radio">
+                    <label class="w3-validate" for="haras">Haras</label>
+                    <input id="hippo" name="hippo" value="hippo" class="w3-radio" type="radio">
+                    <label class="w3-validate" for="hippo">Hippodrome</label>
+                    <input id="club" name="club" value="club" class="w3-radio" type="radio">
+                    <label class="w3-validate" for="club">Club-Hippique</label>
+                    <input id="boucherie" name="boucherie" value="boucherie" class="w3-radio" type="radio">
+                    <label class="w3-validate" for="boucherie">Boucherie</label>
+                </div>
+                <div class="w3-group">
+                    <label class="w3-validate" for="dateCreation">Date de création : </label>
+                    <input class="w3-input" id="dateCreation" name="dateCreation" type="date">
+                </div>
+                <div class="w3-group">
+                    <label class="w3-validate" for="Descr">Description</label>
+                    <textarea id="Descr" name="Text1" rows="5"></textarea>
+                </div>
+                <div class="w3-group">
+                    <label class="w3-validate" for="ajoutImageOrga">Ajouter des images : </label>
+                    <input class="w3-input" id="ajoutImageOrga" name="ajoutImageOrga" type="file">
+                </div>
+                <div class="sub-btn">
+                    <button type="submit" class="w3-center w3-btn w3-black">Ajouter</button>
+                    <button id="reset" type="reset" class="w3-center w3-btn w3-black">Annuler</button>
+                </div>
+            </form>
+        </div>
+    </div>
+    <br/>
+    <!-- LISTE CHEVEAUX -->
+    <section>
+        <div class="fiche w3-card-8">
+            <!-- Bouton et actions -->
+            <header class="w3-container w3-teal w3-black">
+                <img src="image/horse.png" class=" w3-image w3-round" /> Hippodrome de Toulouse
+            </header>
+            <!--Content-->
+            <div>
+                <br/>
+                <section class="w3-container">
+                    <div class="w3-third">
+                        <img src="image/hippodromeToulouse.jpg" class=" w3-image w3-round" />
+                        <br/>
+                        <br/>
+                        <center>
+                            <a class="w3-btn w3-white w3-border m5"> Gallerie d'image </a>
+                        </center>
+                    </div>
+                    <div class="w3-twothird w3-padding">
+                        <ul class="w3-ul">
+                            <li><strong>Nom : </strong> Hippodrome de Toulouse</li>
+                            <li><strong>Statut : </strong> Hippodrome</li>
+                            <li><strong>Date de création : </strong> En 1866</li>
+                            <li><strong>Revenu : </strong> Plus que l'hippodrome de Biarritz !</li>
+                            <li><strong>Compétition : </strong> Les meilleurs sont ici tous les vendredis :)</li>
+                        </ul>
+                    </div>
+                </section>
+                <section class="w3-container wrap-reverse">
+                    <div class="w3-third w3-padding">
+                        <strong> Évènements organisés </strong>
+                        <ul class="w3-ul">
+                            <li>Grande belette de Toulouse !!</li>
+                            <li>Coupe de quidditch à cheval</li>
+                        </ul>
+                    </div>
+                    <div class="w3-twothird w3-padding">
+                        <strong> Biographie </strong>
+                        <div class="card tlj">
+                            L'hippodrome de la Cépière se situe dans le quartier de la Cépière à Toulouse dans la Haute-Garonne et à proximité du Zénith. La mairie de Toulouse est propriétaire de l'hippodrome et loue les terrains à la Société Sportive des Courses de Toulouse. Situé à seulement 4 kilomètres de la Place du Capitole, sur une aire de 34 hectares, il est l'un des plus beaux de France. Il fut inauguré en 1866.
+                        </div>
+                    </div>
+                </section>
+            </div>
+            <br/>
+        </div>
+    </section>
+    <!-- End Page Content -->
+</div>
+<!-- Footer -->
+<footer class="w3-container w3-padding-64 w3-center w3-opacity w3-light-grey w3-xlarge">
+    <i class="fa fa-facebook-official w3-hover-text-indigo"></i>
+    <i class="fa fa-instagram w3-hover-text-purple"></i>
+    <i class="fa fa-snapchat w3-hover-text-yellow"></i>
+    <i class="fa fa-pinterest-p w3-hover-text-red"></i>
+    <i class="fa fa-twitter w3-hover-text-light-blue"></i>
+    <i class="fa fa-linkedin w3-hover-text-indigo"></i>
+    <p class="w3-medium">Powered by <a href="http://www.w3schools.com/w3css/default.asp" target="_blank">w3.css</a></p>
+</footer>
+</body>
+
+</html>
