@@ -4,6 +4,7 @@ $(document).ready(function() {
     $("#organismeResearch").hide();
     $("#eventResearch").hide();
     $("#advanced").hide();
+    $("div#id04").hide();
 
     $("#cheval").click(function() {
         $("#chevalResearch").show();
@@ -21,18 +22,21 @@ $(document).ready(function() {
         $("#eventResearch").show();
     });
 
+    $("a#MoreInfo").click(function () {
+        if( $("div#id04").is(":visible")) {
+            $("div#id04").hide();
+        }
+        else {
+            $("div#id04").show();
+        }
+    });
+
     $("#toogle").click(function(e) {
         e.preventDefault();
         $("#advanced").show();
     });
 
-    // A revoir la fonction
-    $("#saillieOui").click(function (e) {
-        if($(".saillieOui").is(":visiable"))
-            $(".saillieOui").hide();
-        else
-            $(".saillieOui").show();
-    });
+
 
 
     // $("div ul li#InscriptionButton").click(function () {
