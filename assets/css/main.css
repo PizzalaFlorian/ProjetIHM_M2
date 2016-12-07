@@ -183,6 +183,23 @@ textarea{
     text-align: justify;
 }
 
+.wrap-reverse{
+	display: flex !important;
+	flex-direction: row !important ;
+	flex-wrap: wrap-reverse !important;
+}
+
+.posIcon{
+	position: relative;
+	float: right;
+	top:-50px;
+	margin:5px;
+	color:#3A2020;
+}
+
+.posIcon:hover{
+	color:white;
+}
 
 @media screen and (max-width: 640px) {
 
