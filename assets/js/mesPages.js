@@ -10,7 +10,13 @@ $(document).ready(function() {
         else {
             $("div#formAjoutOrga").show();
         }
+    });
 
+    $("button#reset").click(function (e) {
+        e.preventDefault();
+        if( $("div#formAjoutOrga").is(":visible")) {
+            $("div#formAjoutOrga").hide();
+        }
     });
 
 });
