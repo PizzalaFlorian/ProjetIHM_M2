@@ -21,6 +21,19 @@ body {
     background-color: #3A2020 !important;
 }
 
+.color-black{
+	color:#3A2020;
+}
+
+.hover{
+	padding: 5px;
+}
+
+.hover:hover{
+	background-color:#3A2020;
+	color:white;
+}
+
 #deconnexionButton,
 #menuProfil {
     display: none;
@@ -201,13 +214,54 @@ textarea{
 .posIcon{
 	position: relative;
 	float: right;
-	top:-50px;
+	top:-55px;
 	margin:5px;
 	color:#3A2020;
+	padding:5px;
 }
 
 .posIcon:hover{
+	background-color: #3A2020;
+	border-radius: 5px;
 	color:white;
+}
+
+.posIconBis{
+	position: relative;
+	float: right;
+	margin:5px;
+	top:-30px;
+	color:#3A2020;
+	padding:5px;
+}
+
+.posIconBis:hover{
+	background-color: #3A2020;
+	border-radius: 5px;
+	color:white;
+}
+
+.fiche{
+	margin-top:20px;
+	margin-bottom: 20px;
+}
+
+.flexlist{
+	display: flex;
+	flex-direction: column;
+}
+
+.flexRow{
+	display: flex;
+	flex-direction: row;
+}
+
+.VAC{
+	align-items: center;
+}
+
+.ASC{
+	align-self: center;
 }
 
 @media screen and (max-width: 640px) {
