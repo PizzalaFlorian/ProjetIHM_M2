@@ -9,6 +9,126 @@ $(document).ready(function() {
     $("#listOrga").hide();
     $("#listEvent").hide();
 
+
+    $("#trait").click(function(e){
+        if(trait == false){
+            trait = true;
+        }
+        else{
+            trait = false;
+        }
+        if(selle){
+            $(".selle").each(function(){
+                $(this).show();
+            })
+        }
+        else{
+             $(".selle").each(function(){
+                $(this).hide();
+            })
+        }
+        if(demiSelle){
+            $(".demi-selle").each(function(){
+                $(this).show();
+            })
+        }
+        else{
+             $(".demi-selle").each(function(){
+                $(this).hide();
+            })
+        }
+        if(trait){
+            $(".trait").each(function(){
+                $(this).show();
+            })
+        }
+        else{
+             $(".trait").each(function(){
+                $(this).hide();
+            })
+        }
+    });
+
+    $("#selle").click(function(e){
+         if(selle == false){
+            selle = true;
+        }
+        else{
+            selle = false;
+        }
+        if(selle){
+            $(".selle").each(function(){
+                $(this).show();
+            })
+        }
+        else{
+             $(".selle").each(function(){
+                $(this).hide();
+            })
+        }
+        if(demiSelle){
+            $(".demi-selle").each(function(){
+                $(this).show();
+            })
+        }
+        else{
+             $(".demi-selle").each(function(){
+                $(this).hide();
+            })
+        }
+        if(trait){
+            $(".trait").each(function(){
+                $(this).show();
+            })
+        }
+        else{
+             $(".trait").each(function(){
+                $(this).hide();
+            })
+        }
+    });
+
+    $("#demi-selle").click(function(e){
+        if(demiSelle == false){
+            demiSelle = true;
+        }
+        else{
+            demiSelle = false;
+        }
+        if(selle){
+            $(".selle").each(function(){
+                $(this).show();
+            })
+        }
+        else{
+             $(".selle").each(function(){
+                $(this).hide();
+            })
+        }
+        if(demiSelle){
+            $(".demi-selle").each(function(){
+                $(this).show();
+            })
+        }
+        else{
+             $(".demi-selle").each(function(){
+                $(this).hide();
+            })
+        }
+        if(trait){
+            $(".trait").each(function(){
+                $(this).show();
+            })
+        }
+        else{
+             $(".trait").each(function(){
+                $(this).hide();
+            })
+        }
+    });
+
+
+
     $("#cheval").click(function() {
         $("#chevalResearch").show();
         $("#dada").show();
