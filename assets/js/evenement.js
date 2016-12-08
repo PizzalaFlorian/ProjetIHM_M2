@@ -7,6 +7,7 @@ $(document).ready(function() {
     $("#deconnexionButton").show();
     $("#loginButton").hide();
     $("#InscriptionButton").hide();
+    $("#iconNotif").show();
 
 
     $("a#openFormEven").click(function (e) {

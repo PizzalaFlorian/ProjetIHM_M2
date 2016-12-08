@@ -18,10 +18,12 @@ $(document).ready(function () {
         $("#deconnexionButton").show();
         $("#loginButton").hide();
         $("#InscriptionButton").hide();
+        $("#iconNotif").show();
     }
 
     $("div.w3-top div#nav-inscription").hide();
     $("div.w3-top div#nav-login").hide();
+    $("#iconNotif").hide();
 
     $("div ul li#loginButton").click(function () {
         if( $("div.w3-top div#nav-login").is(":visible")) {
@@ -66,6 +68,8 @@ $(document).ready(function () {
         $("#menuProfil").hide();
         $("div#actualiteLog").hide();
         $("div#actualite").show();
+
+        $("#iconNotif").hide();
     });
 
     function seConnecte() {
@@ -82,6 +86,7 @@ $(document).ready(function () {
         $("#deconnexionButton").show();
         $("#loginButton").hide();
         $("#InscriptionButton").hide();
+        $("#iconNotif").show();
     }
 
     $("#barreRecherche").submit(function (e) {
