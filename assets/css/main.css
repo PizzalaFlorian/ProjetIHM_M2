@@ -125,6 +125,19 @@ section.evenement div.commentaire {
     padding-left: 10%;
 }
 
+section.evenementPage {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+section.evenementPage > div {
+    width: 48%;
+    margin-right: 5px;
+    margin-left: 5px;
+    flex-shrink: 0;
+}
+
 div.commentaire i {
     color:#3A2020;
     margin-right: 5px;
