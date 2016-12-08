@@ -333,12 +333,13 @@ textarea {
     /*.imageActu {
         width: 257px;
     }*/
-    .w3-third{
+    .w3-third, .w3-half, section.evenementPage > div {
         width: 100% !important;
     }
     #listActu a{
         width: 100% !important;
     }
+
     .infoFileActu {
         margin-left: 15px;
         display: inline-flex;
@@ -349,9 +350,13 @@ textarea {
         flex-wrap: wrap !important;
     }
     .actuPageActu {
+        padding: 0 !important;
         display: inline-flex;
         display: flex !important;
         flex-direction: row !important;
         flex-wrap: wrap !important;
+    }
+    .w3-row-padding{
+        padding: 0 !important;
     }
 }
