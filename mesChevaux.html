@@ -173,59 +173,55 @@
         </div>
         <br/>
         <!-- LISTE CHEVEAUX -->
-
         <div id="photo" class="w3-modal">
             <div class="w3-modal-content w3-animate-top w3-card-8">
                 <header class="w3-container w3-teal  w3-black">
                     <span onclick="document.getElementById('photo').style.display='none'" class="w3-closebtn">&times;</span>
                     <center>
-                    <a class="w3-btn w3-black w3-border w3-border-white  w3-hover-white"> Ajouter des photos </a>
+                        <a class="w3-btn w3-black w3-border w3-border-white  w3-hover-white"> Ajouter des photos </a>
                     </center>
                 </header>
                 <div class="w3-content w3-display-container">
-
-                  <a class="w3-btn-floating w3-hover-dark-grey w3-display-left" onclick="plusDivs(-1)">&#10094;</a>
-                  <a class="w3-btn-floating w3-hover-dark-grey w3-display-right" onclick="plusDivs(1)">&#10095;</a>
-
-                  <div class="w3-display-container mySlides">
-                    <img src="image/pic06.jpg" style="width:100%"/>
-                  </div>
-
-                  <div class="w3-display-container mySlides">
-                    <img src="image/pic07.jpg" style="width:100%"/> 
+                    <a class="w3-btn-floating w3-hover-dark-grey w3-display-left" onclick="plusDivs(-1)">&#10094;</a>
+                    <a class="w3-btn-floating w3-hover-dark-grey w3-display-right" onclick="plusDivs(1)">&#10095;</a>
+                    <div class="w3-display-container mySlides">
+                        <img src="image/pic06.jpg" style="width:100%" />
                     </div>
-
-                  <div class="w3-display-container mySlides">
-                    <img src="image/pic09.jpg" style="width:100%"/>
+                    <div class="w3-display-container mySlides">
+                        <img src="image/pic07.jpg" style="width:100%" />
                     </div>
+                    <div class="w3-display-container mySlides">
+                        <img src="image/pic09.jpg" style="width:100%" />
+                    </div>
+                    <div class="w3-display-container mySlides">
+                        <img src="image/pic10.jpg" style="width:100%" />
+                    </div>
+                    <script>
+                    var slideIndex = 1;
+                    showDivs(slideIndex);
 
-                  <div class="w3-display-container mySlides">
-                    <img src="image/pic10.jpg" style="width:100%"/>
-                  </div>
-
-                  <script>
-                  var slideIndex = 1;
-                  showDivs(slideIndex);
-
-                  function plusDivs(n) {
-                    showDivs(slideIndex += n);
-                  }
-
-                  function showDivs(n) {
-                    var i;
-                    var x = document.getElementsByClassName("mySlides");
-                    if (n > x.length) {slideIndex = 1}    
-                    if (n < 1) {slideIndex = x.length}
-                    for (i = 0; i < x.length; i++) {
-                       x[i].style.display = "none";  
+                    function plusDivs(n) {
+                        showDivs(slideIndex += n);
                     }
-                    x[slideIndex-1].style.display = "block";  
-                  }
-                  </script>
-            </div>
-        </div> 
-      </div>      
 
+                    function showDivs(n) {
+                        var i;
+                        var x = document.getElementsByClassName("mySlides");
+                        if (n > x.length) {
+                            slideIndex = 1
+                        }
+                        if (n < 1) {
+                            slideIndex = x.length
+                        }
+                        for (i = 0; i < x.length; i++) {
+                            x[i].style.display = "none";
+                        }
+                        x[slideIndex - 1].style.display = "block";
+                    }
+                    </script>
+                </div>
+            </div>
+        </div>
         <section>
             <div class="fiche w3-card-8">
                 <!-- Bouton et actions -->
@@ -286,12 +282,12 @@
                                                 <button id="addPapa" type="submit" class="w3-btn w3-black"> Ajouter</button>
                                             </div>
                                             <ul id="papaCache" class="w3-ul w3-card-4">
-                                              <li class="w3-padding-16">
-                                                <span id="raPapa" onclick="this.parentElement.style.display='none'" 
-                                                class="w3-closebtn w3-padding">&times;</span>
-                                                <img src="image/ourasi.jpg" class="w3-left w3-circle" style="width:40px">
-                                                <span class="w3-xlarge">Ourasi le Roi fénéant</span><br>
-                                              </li>
+                                                <li class="w3-padding-16">
+                                                    <span id="raPapa" onclick="this.parentElement.style.display='none'" class="w3-closebtn w3-padding">&times;</span>
+                                                    <img src="image/ourasi.jpg" class="w3-left w3-circle" style="width:40px">
+                                                    <span class="w3-xlarge">Ourasi le Roi fénéant</span>
+                                                    <br>
+                                                </li>
                                             </ul>
                                         </div>
                                         <div class="w3-half w3-card-2 w3-center">
@@ -312,12 +308,12 @@
                                                 <button id="addMama" type="submit" class="w3-btn w3-black"> Ajouter</button>
                                             </div>
                                             <ul id="mamaCache" class="w3-ul w3-card-4">
-                                              <li class="w3-padding-16">
-                                                <span id="raMama" onclick="this.parentElement.style.display='none'" 
-                                                class="w3-closebtn w3-padding">&times;</span>
-                                                <img src="image/inconnu.jpg" class="w3-left w3-circle" style="width:40px;">
-                                                <span class="w3-xlarge">Rachel Alexandra</span><br>
-                                              </li>
+                                                <li class="w3-padding-16">
+                                                    <span id="raMama" onclick="this.parentElement.style.display='none'" class="w3-closebtn w3-padding">&times;</span>
+                                                    <img src="image/inconnu.jpg" class="w3-left w3-circle" style="width:40px;">
+                                                    <span class="w3-xlarge">Rachel Alexandra</span>
+                                                    <br>
+                                                </li>
                                             </ul>
                                         </div>
                                     </div>
@@ -342,26 +338,26 @@
                                                 <button id="addMomo" type="submit" class="w3-btn w3-black"> Ajouter</button>
                                             </div>
                                             <ul id="enfant1" class="w3-ul w3-card-4">
-                                              <li class="w3-padding-16">
-                                                <span id="raEn" onclick="this.parentElement.style.display='none'" 
-                                                class="w3-closebtn w3-padding">&times;</span>
-                                                <img src="image/inconnu.jpg" class="w3-left w3-circle" style="width:40px;">
-                                                <span class="w3-xlarge">Tornado</span><br>
-                                              </li>
+                                                <li class="w3-padding-16">
+                                                    <span id="raEn" onclick="this.parentElement.style.display='none'" class="w3-closebtn w3-padding">&times;</span>
+                                                    <img src="image/inconnu.jpg" class="w3-left w3-circle" style="width:40px;">
+                                                    <span class="w3-xlarge">Tornado</span>
+                                                    <br>
+                                                </li>
                                             </ul>
                                             <ul id="enfant2" class="w3-ul w3-card-4">
-                                              <li class="w3-padding-16">
-                                                <span id="raEn" onclick="this.parentElement.style.display='none'" 
-                                                class="w3-closebtn w3-padding">&times;</span>
-                                                <img src="image/pic05.jpg" class="w3-left w3-circle" style="width:40px;">
-                                                <span class="w3-xlarge">Stéphanie IV</span><br>
-                                              </li>
+                                                <li class="w3-padding-16">
+                                                    <span id="raEn" onclick="this.parentElement.style.display='none'" class="w3-closebtn w3-padding">&times;</span>
+                                                    <img src="image/pic05.jpg" class="w3-left w3-circle" style="width:40px;">
+                                                    <span class="w3-xlarge">Stéphanie IV</span>
+                                                    <br>
+                                                </li>
                                             </ul>
-                                          </div>
+                                        </div>
                                     </div>
                                     <br/>
                                     <center>
-                                      <button id="saveGea" class="w3-btn w3-black w3-center" > Enregistrer </button>
+                                        <button id="saveGea" class="w3-btn w3-black w3-center"> Enregistrer </button>
                                     </center>
                                     <br/>
                                 </div>
@@ -476,7 +472,7 @@
                                 <li><strong>Saillie : </strong><span class="w3-tag w3-yellow">Artificielle</span></li>
                                 <li><strong>Liens de parentés : </strong> <a onclick="document.getElementById('id02').style.display='block'" class="w3-btn w3-black w3-border ml5">Ajouter des liens de parentés</a></li>
                             </ul>
-                          </div>
+                        </div>
                     </section>
                     <section class="w3-container wrap-reverse">
                         <div class="w3-third w3-padding">

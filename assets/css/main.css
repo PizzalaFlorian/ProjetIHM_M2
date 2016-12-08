@@ -21,17 +21,17 @@ body {
     background-color: #3A2020 !important;
 }
 
-.color-black{
-	color:#3A2020;
+.color-black {
+    color: #3A2020;
 }
 
-.hover{
-	padding: 5px;
+.hover {
+    padding: 5px;
 }
 
-.hover:hover{
-	background-color:#3A2020;
-	color:white;
+.hover:hover {
+    background-color: #3A2020;
+    color: white;
 }
 
 #deconnexionButton,
@@ -72,7 +72,7 @@ body {
 }
 
 #fileActu > div {
-	display: flex;
+    display: flex;
 }
 
 .imageActu {
@@ -80,32 +80,31 @@ body {
 }
 
 .imageActuFilleActu {
-	display: inline-flex;
-	width: 280px;
-	height: 280px;
-	align-items: flex-end;
+    display: inline-flex;
+    width: 280px;
+    height: 280px;
+    align-items: flex-end;
 }
 
 .infoFileActu {
-	margin-left: 15px;
+    margin-left: 15px;
     display: inline-flex;
     align-items: flex-start;
-	min-height: 280px;
+    min-height: 280px;
 }
 
 .actuPageActu {
     display: inline-flex;
 }
 
-.actuPageActu
-
-.saillieOui {
-	display: none;
+.actuPageActu .saillieOui {
+    display: none;
 }
 
 a.bouttonSaillie {
     margin-left: 15%;
 }
+
 #EnvoyerMessageSaillie {
     margin-top: 10px;
     margin-left: 40%;
@@ -118,29 +117,29 @@ a.bouttonSaillie {
     justify-content: center;
 }
 
-.flex{
+.flex {
     display: flex;
     flex-direction: row;
 }
 
-.pad5{
-	padding: 5px;
+.pad5 {
+    padding: 5px;
 }
 
-.pad10{
-	padding: 10px;
+.pad10 {
+    padding: 10px;
 }
 
-.pad15{
-	padding: 15px;
+.pad15 {
+    padding: 15px;
 }
 
-.pad20{
-	padding: 20px;
+.pad20 {
+    padding: 20px;
 }
 
-.pad50{
-	padding: 50px;
+.pad50 {
+    padding: 50px;
 }
 
 .ml5 {
@@ -183,93 +182,92 @@ a.bouttonSaillie {
     margin-right: 50px;
 }
 
-textarea{
+textarea {
     width: 100%;
 }
 
-.sub-btn{
-    margin:10px;
+.sub-btn {
+    margin: 10px;
     display: flex;
     flex-direction: row;
     justify-content: center;
 }
-.sub-btn > button{
+
+.sub-btn > button {
     margin: 10px;
 }
 
-.m5{
+.m5 {
     margin: 5px;
 }
 
-.tlj{
+.tlj {
     text-align: justify;
 }
 
-.wrap-reverse{
-	display: flex !important;
-	flex-direction: row !important ;
-	flex-wrap: wrap-reverse !important;
+.wrap-reverse {
+    display: flex !important;
+    flex-direction: row !important;
+    flex-wrap: wrap-reverse !important;
 }
 
-.posIcon{
-	position: relative;
-	float: right;
-	top:-55px;
-	margin:5px;
-	color:#3A2020;
-	padding:5px;
+.posIcon {
+    position: relative;
+    float: right;
+    top: -55px;
+    margin: 5px;
+    color: #3A2020;
+    padding: 5px;
 }
 
-.posIcon:hover{
-	background-color: #3A2020;
-	border-radius: 5px;
-	color:white;
+.posIcon:hover {
+    background-color: #3A2020;
+    border-radius: 5px;
+    color: white;
 }
 
-.posIconBis{
-	position: relative;
-	float: right;
-	margin:5px;
-	top:-30px;
-	color:#3A2020;
-	padding:5px;
+.posIconBis {
+    position: relative;
+    float: right;
+    margin: 5px;
+    top: -30px;
+    color: #3A2020;
+    padding: 5px;
 }
 
-.posIconBis:hover{
-	background-color: #3A2020;
-	border-radius: 5px;
-	color:white;
+.posIconBis:hover {
+    background-color: #3A2020;
+    border-radius: 5px;
+    color: white;
 }
 
-.fiche{
-	margin-top:20px;
-	margin-bottom: 20px;
+.fiche {
+    margin-top: 20px;
+    margin-bottom: 20px;
 }
 
-.flexlist{
-	display: flex;
-	flex-direction: column;
+.flexlist {
+    display: flex;
+    flex-direction: column;
 }
 
-.flexRow{
-	display: flex;
-	flex-direction: row;
+.flexRow {
+    display: flex;
+    flex-direction: row;
 }
 
-.VAC{
-	align-items: center;
+.VAC {
+    align-items: center;
 }
 
-.ASC{
-	align-self: center;
+.ASC {
+    align-self: center;
 }
 
 @media screen and (max-width: 640px) {
-
     .imageActu {
         width: 257px;
     }
-
     .infoFileActu {
         margin-left: 15px;
         display: inline-flex;
@@ -279,7 +277,6 @@ textarea{
         flex-direction: row !important;
         flex-wrap: wrap !important;
     }
-
     .actuPageActu {
         display: inline-flex;
         display: flex !important;
