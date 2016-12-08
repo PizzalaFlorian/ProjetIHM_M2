@@ -9,7 +9,7 @@
 <link rel="stylesheet" type="text/css" href="assets/css/main.css">
 <script src="http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
 <script type="text/javascript" src="assets/js/main.js"></script>
-<script type="text/javascript" src="assets/js/mesPages.js">
+<script type="text/javascript" src="assets/js/cheval.js">
 </script>
 <!-- favicon -->
 <link rel="apple-touch-icon" sizes="57x57" href="./icon/apple-icon-57x57.png">
@@ -94,70 +94,23 @@
 <!-- Page content -->
 <div class="w3-content" style="margin-top: 100px;">
     <div class="w3-panel w3-light-grey">
-        <h2 class="w3-text-shadow w3-center">MES PAGES</h2>
-    </div>
-    <div class="w3-card-2 pad10">
-        <div class="w3-center flexCenter">
-            <h4 class="mr15"> Ajouter un organisme </h4>
-            <a id="openFormOrga" class="w3-btn-floating-large w3-ripple w3-black ml15">+</a>
-        </div>
-        <div id="formAjoutOrga">
-            <br/>
-            <form class="w3-container w3-card-4">
-                <div class="w3-group">
-                    <label class="w3-validate" for="nomOrga">Nom de l'organisme</label>
-                    <input class="w3-input" id="nomOrga" name="nomOrga" type="text" placeholder="Saissisez le nom de votre organisme" required>
-                </div>
-                <div class="w3-group">
-                    <p class="w3-validate">Statut de l'organisme :</p>
-                    <input id="haras" name="statut" value="haras" class="w3-radio" type="radio">
-                    <label class="w3-validate" for="haras">Haras</label>
-                    <input id="hippo" name="statut" value="hippo" class="w3-radio" type="radio">
-                    <label class="w3-validate" for="hippo">Hippodrome</label>
-                    <input id="club" name="statut" value="club" class="w3-radio" type="radio">
-                    <label class="w3-validate" for="club">Club-Hippique</label>
-                    <input id="boucherie" name="statut" value="boucherie" class="w3-radio" type="radio">
-                    <label class="w3-validate" for="boucherie">Boucherie</label>
-                </div>
-                <div class="w3-group">
-                    <label class="w3-validate" for="dateCreation">Date de création : </label>
-                    <input class="w3-input" id="dateCreation" name="dateCreation" type="date">
-                </div>
-                <div class="w3-group">
-                    <label class="w3-validate" for="Descr">Description</label>
-                    <textarea id="Descr" name="Text1" rows="5"></textarea>
-                </div>
-                <div class="w3-group">
-                    <label class="w3-validate" for="ajoutImageOrga">Ajouter des images : </label>
-                    <input class="w3-input" id="ajoutImageOrga" name="ajoutImageOrga" type="file">
-                </div>
-                <div class="sub-btn">
-                    <button type="submit" class="w3-center w3-btn w3-black">Ajouter</button>
-                    <button id="reset" type="reset" class="w3-center w3-btn w3-black">Annuler</button>
-                </div>
-            </form>
-        </div>
+        <h2 class="w3-text-shadow w3-center">L'hippodrome de Toulouse</h2>
     </div>
     <br/>
-    <!-- LISTE CHEVEAUX -->
     <section>
         <div class="fiche w3-card-8">
             <!-- Bouton et actions -->
             <header class="w3-container w3-teal w3-black">
-                <img src="image/horse.png" class=" w3-image w3-round" /> Hippodrome de Toulouse
+                <br>
             </header>
             <!--Content-->
             <div>
                 <br/>
                 <section class="w3-container">
-                    <div class="w3-third">
+                    <div class="w3-center">
                         <img src="image/hippodromeToulouse.jpg" class=" w3-image w3-round" />
-                        <br/>
-                        <br/>
-                        <center>
-                            <a class="w3-btn w3-white w3-border m5"> Gallerie d'image </a>
-                        </center>
                     </div>
+                    <br>
                     <div class="w3-twothird w3-padding">
                         <ul class="w3-ul">
                             <li><strong>Nom : </strong> Hippodrome de Toulouse</li>
@@ -166,6 +119,11 @@
                             <li><strong>Revenu : </strong> Plus que l'hippodrome de Biarritz !</li>
                             <li><strong>Compétition : </strong> Les meilleurs sont ici tous les vendredis :)</li>
                         </ul>
+                    </div>
+                    <div class="w3-threethird w3-padding">
+                        <br>
+                        <br>
+                        <a class="followButton w3-btn w3-black w3-border m5r">Follow</a>
                     </div>
                 </section>
                 <section class="w3-container wrap-reverse">
@@ -176,7 +134,6 @@
                             <li>Coupe de quidditch à cheval</li>
                         </ul>
                         <br>
-                        <a href="organismes.html" class="w3-btn w3-black w3-border m5"> Aller à la page de l'orga</a>
                     </div>
                     <div class="w3-twothird w3-padding">
                         <strong> Description </strong>
@@ -186,12 +143,80 @@
                     </div>
                 </section>
             </div>
-            <br><br>
-            <i class="fa fa-trash w3-xxlarge posIconBis" aria-hidden="true"></i>
-            <i class="fa fa-pencil-square-o w3-xxlarge posIconBis" aria-hidden="true"></i>
             <br/>
         </div>
     </section>
+    <br/>
+    <section class="evenement">
+        <div class="fiche w3-card-8">
+            <!-- Bouton et actions -->
+            <header class="w3-container w3-teal w3-black">
+                La folle course des nains montés
+            </header>
+            <!--Content-->
+            <div>
+                <br/>
+                <section class="w3-container ">
+                    <div class="w3-center">
+                        <img src="image/course1.jpg" class=" w3-image w3-round" />
+                    </div>
+                    <br>
+                    <div class="w3-twothird w3-padding">
+                        <ul class="w3-ul">
+                            <li><strong>Vainqueur : </strong> Kenny Baker</li>
+                            <li><strong>Second : </strong> Peter Dinklage</li>
+                        </ul>
+                    </div>
+                </section>
+                <section class="w3-container wrap-reverse">
+                    <div class="w3-padding">
+                        <div class="card tlj">
+                            Et oui ! Encore une fois le célèbre Kenny a remporté la victoire ce dimanche 1 avril face à son nouveau rival Peter. Malheureusement pour ce dernier le repas à la cantine fût trop consistent ce qui le rendit trop lourd pour son poney de premier choix.
+                        </div>
+                        <br>
+                        <div class="commentaire">
+                            <p><i class="fa fa-comments" aria-hidden="true"></i> Youhou !!! vive mon petit Kennychou adoré ! Je t'aime Kennyyyyyy </p>
+                            <p><i class="fa fa-comments" aria-hidden="true"></i> Bouuuh ! Encore une victoire volé par ce nabot de Baker, il ne mérite pourtant pas de gagner face au géant Peter Dinklage </p>
+                            <p><i class="fa fa-comments" aria-hidden="true"></i> Il n'y a eu aucune triche ! Alors arrête de semer ton venin partout</p>
+                        </div>
+                    </div>
+                </section>
+            </div>
+            <br/>
+        </div>
+
+        <div class="fiche w3-card-8">
+            <!-- Bouton et actions -->
+            <header class="w3-container w3-teal w3-black">
+                Une petite balade entre chatelain
+            </header>
+            <!--Content-->
+            <div>
+                <br/>
+                <section class="w3-container ">
+                    <div class="w3-center">
+                        <img src="image/course2.jpg" class=" w3-image w3-round" />
+                    </div>
+                    <br>
+                </section>
+                <section class="w3-container wrap-reverse">
+                    <div class="w3-padding">
+                        <div class="card tlj">
+                            Encore une belle journée pour nos chatelain préférée. On ne se lassera donc jamais de voir ces riches personnes gambader sur les chevaux hors de prix pour nous le bas peuple. Quelle chance d'avoir pu apercevoir en ce lundi le roi Aragorn en compagnie de Sauron le seigneur des ténèbres, On ne manquera pas de rappeler leur dernier conflit en terre du milieu qui avait pourtant mal tourné pour notre Saurichou adoré ...
+                        </div>
+                        <br>
+                        <div class="commentaire">
+                            <p><i class="fa fa-comments" aria-hidden="true"></i>Waaaaahouuuu ... encore une super journée dans la boue à regarder ces beaux étalons, quelle chance d'avoir été choisie pour servir de paillasson</p>
+                            <p><i class="fa fa-comments" aria-hidden="true"></i>Pffff.. tant de niaiserie dans ces commentaires, on se croirait en pleine télé réalité. Et l'autre cruche qui se trouve heureuse d'avoir servi de paillasson ... vraiment déplorable.</p>
+                            <p><i class="fa fa-comments" aria-hidden="true"></i>Raaaah le jaloux. Comme il est trop dégouté de ne pas avoir été choisie pour un tel honneur. Allez retourne dans ta misére bouseux !</p>
+                        </div>
+                    </div>
+                </section>
+            </div>
+            <br/>
+        </div>
+    </section>
+    <br/>
     <!-- End Page Content -->
 </div>
 <!-- Footer -->
