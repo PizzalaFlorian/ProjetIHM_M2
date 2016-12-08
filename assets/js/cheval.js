@@ -11,6 +11,7 @@ $(document).ready(function() {
     $("#mamaOuté").hide();
     $("#momoOuté").hide();
     $("#papaCache").hide();
+    $("#mamaCache").hide();
 
     $("#openFormCheval").click(function(e) {
         e.preventDefault();
@@ -23,6 +24,18 @@ $(document).ready(function() {
              toogle = true;
         }
     });
+
+     $("#addMama").click(function(e) {
+        e.preventDefault();
+        $("#mamaCache").show();
+        $("#mamaOuté").hide();
+        $("#maman").hide();
+    });
+    
+    $("#raPapa").click(function(e) {
+        $("#maman").show();
+    });
+
     $("#addPapa").click(function(e) {
         e.preventDefault();
         $("#papaCache").show();
