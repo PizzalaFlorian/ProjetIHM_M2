@@ -60,8 +60,8 @@
             <li id="loginButton" class="w3-hide-small w3-right"><a href="#" class="w3-padding-large w3-hover-red">Login</a> </li>
             <li id="InscriptionButton" class="w3-hide-small w3-right"><a href="#" class="w3-padding-large w3-hover-red">Inscription</a> </li>
 
-            <li id="iconNotif" class="w3-hide-small w3-right">
-                <a href="./notif.html" class="w3-padding-large w3-hover-red">
+            <li id="iconNotif" class="w3-hide-small w3-right w3-red">
+                <a href="./notif.html" class="w3-padding-large w3-hover-white">
                     <i class="fa fa-bell-o " aria-hidden="true"></i>
                 </a>
             </li>
@@ -141,18 +141,31 @@
                     </div>
                     <hr>
                     <div id="chevalResearch" class="w3-row">
-                        <div >
+                        <div>
                             <div class="w3-group">
                                 <label class="w3-validate" for="Descr">Description</label>
                                 <textarea id="Descr" name="Text1" rows="5"></textarea>
                             </div>
-                            <h4 class="">Photos de l'évènement :</h4>
-                            <input type="file" name="img" multiple>
+                            <div>
+                                <h4 class="">Photos de l'évènement :</h4>
+                                <input type="file" name="img" multiple>
+                            </div>
+                        </div>
+                    </div>
+                    <hr>
+                    <div id="invitPeople" class="w3-row">
+                        <div>
+                            <h4 class="">Envoyer des invitations : </h4>
+                            <textarea rows="3" placeholder="Adresse e-mail"></textarea>
+                            <br> <br>
+                            <div id="envoyerInvit" class="w3-center">
+                                <a id="addFollowoers" class="w3-btn w3-black" >Envoyer invitations aux personnes qui me suivent</a>
+                            </div>
                         </div>
                     </div>
                     <div class="sub-btn">
-                        <button id="addEven" type="submit" class="w3-center">Ajouter</button>
-                        <button id="reset" type="reset" class="w3-center">Annuler</button>
+                        <button id="addEven" type="submit" class="w3-center w3-btn w3-black">Ajouter</button>
+                        <button id="reset" type="reset" class="w3-center w3-btn w3-black">Annuler</button>
                     </div>
                 </form>
             </div>
