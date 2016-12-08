@@ -43,7 +43,17 @@ div#listActu {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
+    align-items: stretch;
+    align-content: stretch;
 }
+
+/*#listActu > div{
+	height: 500px;
+}
+
+#listActu > div >a{
+	height: 100%;
+}*/
 
 #actualiteLog {
     display: none;
@@ -82,7 +92,10 @@ div#listActu {
 }
 
 .imageActu {
-    width: 294px;
+    /*width: 294px;*/
+    margin-top: 5px;
+    width:100%;
+    border-radius: 5px;
 }
 
 .imageActuFilleActu {
@@ -305,6 +318,15 @@ textarea {
 
 .ASC {
     align-self: center;
+}
+
+.w3-third{
+	width:31.5% !important;
+}
+
+.myCardTriche{
+	margin: 5px !important;
+	text-decoration: none;
 }
 
 @media screen and (max-width: 640px) {
