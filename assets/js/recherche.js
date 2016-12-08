@@ -34,6 +34,7 @@ $(document).ready(function() {
     $("#toogle").click(function(e) {
         e.preventDefault();
         $("#advanced").show();
+        $("#chevalResearch").show();
     });
 
 

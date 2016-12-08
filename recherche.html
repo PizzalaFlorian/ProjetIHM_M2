@@ -106,7 +106,7 @@
             <div id="advanced" class="w3-row">
                 <div class="w3-center">
                     <h4 class="w3-center">Vous recherchez :</h4>
-                    <input id="cheval" class="w3-radio" type="radio" name="recherche" value="cheval">
+                    <input id="cheval" class="w3-radio" type="radio" name="recherche" value="cheval" checked>
                     <label class="w3-validate"for="cheval">Un cheval</label>
                     <input id="orga" class="w3-radio" type="radio" name="recherche" value="orga">
                     <label class="w3-validate" for="orga">Un organisme</label>
@@ -201,6 +201,155 @@
         <br/>
         <!-- LISTE CHEVEAUX -->
         <section>
+            <!-- Debut cheval -->
+            <div class="fiche w3-card-8 selle Nat Art">
+                <!-- Bouton et actions -->
+                <header class="w3-container w3-teal w3-black">
+                    <img src="image/horse.png" class=" w3-image w3-round" /> Buchéphale l'indomptable
+                </header>
+                <!--Content-->
+                <div>
+                    <br/>
+                    <section class="w3-container">
+                        <div class="w3-third">
+                            <img src="image/pic01.jpg" class=" w3-image w3-round" />
+                        </div>
+                        <div class="w3-twothird w3-padding">
+                            <ul class="w3-ul">
+                                <li><strong>Nom : </strong> Buchéphale l'indomptable</li>
+                                <li><strong>Propriétaire : </strong> Alexandre Le Grand</li>
+                                <li><strong>Sexe : </strong> Male</li>
+                                <li><strong>Race : </strong> Mangalarga marchador</li>
+                                <li><strong>Age : </strong> 8 ans</li>
+                                <li><strong>Catégorie : </strong> Cheval de selle</li>
+                                <li><strong>Saillie : </strong> <span class="w3-tag w3-red">Naturelle</span> <span class="w3-tag w3-yellow">Artificielle</span></li>
+                                <li><a id="MoreInfo" class="w3-btn w3-white w3-border ml5 bouttonSaillie">Plus d'informations</a> <a onclick="document.getElementById('id03').style.display='block'" id="ProposerSaillie" class="w3-btn w3-black w3-border ml5 bouttonSaillie">Proposer Saillie</a> </li>
+                            </ul>
+                            <div id="id03" class="w3-modal">
+                                <div class="w3-modal-content w3-animate-top w3-card-8">
+                                    <header class="w3-container w3-teal  w3-black">
+                                        <span onclick="document.getElementById('id03').style.display='none'" class="w3-closebtn">&times;</span>
+                                        <h2>Message au Propriétaire</h2>
+                                    </header>
+                                    <div class="w3-container">
+                                        <div class="w3-card-2 w3-center">
+                                            <ul class="w3-ul">
+                                                <li><strong>Nom : </strong> Buchéphale l'indomptable</li>
+                                                <li><strong>Propriétaire : </strong> Alexandre Le Grand</li>
+                                                <li><strong>Race : </strong> Mangalarga marchador</li>
+                                            </ul>
+                                        </div>
+                                        <hr>
+                                        <div class="w3-card-2 w3-center">
+                                            <textarea id="messageSaillie" placeholder="Message pour le propriétaire"></textarea>
+                                        </div>
+                                        <button id="EnvoyerMessageSaillie" class="w3-btn w3-black" onclick="document.getElementById('id03').style.display='none'" >Envoyer message</button>
+                                    </div>
+                                    <br/>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+                    <hr/>
+                    <div id="id04">
+                        <section class="w3-container wrap-reverse">
+                            <div class="w3-third w3-padding">
+                                <strong> Prix remportés </strong>
+                                <ul class="w3-ul">
+                                    <li>Grande belette de winchester</li>
+                                    <li>Bataille d'Hydapse</li>
+                                </ul>
+                                <br/>
+                                <a class="w3-btn w3-white w3-border m5"> Acte de Naissance </a>
+                                <a class="w3-btn w3-white w3-border m5"> Bilans Vétérinaires </a>
+                            </div>
+                            <div class="w3-twothird w3-padding">
+                                <strong> Biographie </strong>
+                                <div class="card tlj">
+                                    Cet étalon fut acheté par le père d’Alexandre, Philippe de Macédoine. Mais trop fougueux, il était réputé indomptable. Alexandre le sauva de la mort alors qu’il n’avait que 12 ans. C’est en observant le cheval qu’il se rendit compte qu’il avait peur de son ombre. Il l’en détourna, et les deux compagnons devinrent alors inséparables. Bucéphale mourut en 326 lors de la bataille de Hydapse, où il défendit son cavalier farouchement ! Alexandre fonda alors la ville de Bouképhalia, pour lui rendre hommage.
+                                </div>
+                            </div>
+                        </section>
+                    </div>
+                </div>
+                <br/>
+            </div>
+            <!-- fin cheval -->
+            <!-- Debut cheval -->
+            <div class="fiche w3-card-8 demi Nat">
+                <!-- Bouton et actions -->
+                <header class="w3-container w3-teal w3-black">
+                    <img src="image/horse.png" class=" w3-image w3-round" /> Tornado
+                </header>
+                <!--Content-->
+                <div>
+                    <br/>
+                    <section class="w3-container">
+                        <div class="w3-third">
+                            <img src="image/tornado.jpg" class=" w3-image w3-round" />
+                        </div>
+                        <div class="w3-twothird w3-padding">
+                            <ul class="w3-ul">
+                                <li><strong>Nom : </strong> Tornado </li>
+                                <li><strong>Propriétaire : </strong> Zorro</li>
+                                <li><strong>Sexe : </strong> Male</li>
+                                <li><strong>Race : </strong> Frison</li>
+                                <li><strong>Age : </strong> 4 ans</li>
+                                <li><strong>Catégorie : </strong> Cheval de demi-selle</li>
+                                <li><strong>Saillie : </strong> <span class="w3-tag w3-red">Naturelle</span></li>
+                                <li><a id="MoreInfo" class="w3-btn w3-white w3-border ml5 bouttonSaillie">Plus d'informations</a> <a onclick="document.getElementById('id03').style.display='block'" id="ProposerSaillie" class="w3-btn w3-black w3-border ml5 bouttonSaillie">Proposer Saillie</a> </li>
+                            </ul>
+                            <div id="id03" class="w3-modal">
+                                <div class="w3-modal-content w3-animate-top w3-card-8">
+                                    <header class="w3-container w3-teal  w3-black">
+                                        <span onclick="document.getElementById('id03').style.display='none'" class="w3-closebtn">&times;</span>
+                                        <h2>Message au Propriétaire</h2>
+                                    </header>
+                                    <div class="w3-container">
+                                        <div class="w3-card-2 w3-center">
+                                            <ul class="w3-ul">
+                                                <li><strong>Nom : </strong> Tornado</li>
+                                                <li><strong>Propriétaire : </strong> Zorro</li>
+                                                <li><strong>Race : </strong> Frison</li>
+                                            </ul>
+                                        </div>
+                                        <hr>
+                                        <div class="w3-card-2 w3-center">
+                                            <textarea id="messageSaillie" placeholder="Message pour le propriétaire"></textarea>
+                                        </div>
+                                        <button id="EnvoyerMessageSaillie" class="w3-btn w3-black" onclick="document.getElementById('id03').style.display='none'" >Envoyer message</button>
+                                    </div>
+                                    <br/>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+                    <hr/>
+                    <div id="id04">
+                        <section class="w3-container wrap-reverse">
+                            <div class="w3-third w3-padding">
+                                <strong> Prix remportés </strong>
+                                <ul class="w3-ul">
+                                    <li>Grande belette de winchester</li>
+                                    <li>Bataille d'Hydapse</li>
+                                </ul>
+                                <br/>
+                                <a class="w3-btn w3-white w3-border m5"> Acte de Naissance </a>
+                                <a class="w3-btn w3-white w3-border m5"> Bilans Vétérinaires </a>
+                            </div>
+                            <div class="w3-twothird w3-padding">
+                                <strong> Biographie </strong>
+                                <div class="card tlj">
+                                    Cet étalon fut acheté par le père d’Alexandre, Philippe de Macédoine. Mais trop fougueux, il était réputé indomptable. Alexandre le sauva de la mort alors qu’il n’avait que 12 ans. C’est en observant le cheval qu’il se rendit compte qu’il avait peur de son ombre. Il l’en détourna, et les deux compagnons devinrent alors inséparables. Bucéphale mourut en 326 lors de la bataille de Hydapse, où il défendit son cavalier farouchement ! Alexandre fonda alors la ville de Bouképhalia, pour lui rendre hommage.
+                                </div>
+                            </div>
+                        </section>
+                    </div>
+                </div>
+                <br/>
+            </div>
+            <!-- fin cheval -->
+            <!-- Debut cheval -->
             <div class="fiche w3-card-8">
                 <!-- Bouton et actions -->
                 <header class="w3-container w3-teal w3-black">
@@ -273,6 +422,229 @@
                 </div>
                 <br/>
             </div>
+            <!-- fin cheval -->
+            <!-- Debut cheval -->
+            <div class="fiche w3-card-8">
+                <!-- Bouton et actions -->
+                <header class="w3-container w3-teal w3-black">
+                    <img src="image/horse.png" class=" w3-image w3-round" /> Buchéphale l'indomptable
+                </header>
+                <!--Content-->
+                <div>
+                    <br/>
+                    <section class="w3-container">
+                        <div class="w3-third">
+                            <img src="image/pic01.jpg" class=" w3-image w3-round" />
+                        </div>
+                        <div class="w3-twothird w3-padding">
+                            <ul class="w3-ul">
+                                <li><strong>Nom : </strong> Buchéphale l'indomptable</li>
+                                <li><strong>Propriétaire : </strong> Alexandre Le Grand</li>
+                                <li><strong>Sexe : </strong> Male</li>
+                                <li><strong>Race : </strong> Mangalarga marchador</li>
+                                <li><strong>Age : </strong> 8 ans</li>
+                                <li><strong>Catégorie : </strong> Cheval de selle</li>
+                                <li><strong>Saillie : </strong> <span class="w3-tag w3-red">Naturelle</span> <span class="w3-tag w3-yellow">Artificielle</span></li>
+                                <li><a id="MoreInfo" class="w3-btn w3-white w3-border ml5 bouttonSaillie">Plus d'informations</a> <a onclick="document.getElementById('id03').style.display='block'" id="ProposerSaillie" class="w3-btn w3-black w3-border ml5 bouttonSaillie">Proposer Saillie</a> </li>
+                            </ul>
+                            <div id="id03" class="w3-modal">
+                                <div class="w3-modal-content w3-animate-top w3-card-8">
+                                    <header class="w3-container w3-teal  w3-black">
+                                        <span onclick="document.getElementById('id03').style.display='none'" class="w3-closebtn">&times;</span>
+                                        <h2>Message au Propriétaire</h2>
+                                    </header>
+                                    <div class="w3-container">
+                                        <div class="w3-card-2 w3-center">
+                                            <ul class="w3-ul">
+                                                <li><strong>Nom : </strong> Buchéphale l'indomptable</li>
+                                                <li><strong>Propriétaire : </strong> Alexandre Le Grand</li>
+                                                <li><strong>Race : </strong> Mangalarga marchador</li>
+                                            </ul>
+                                        </div>
+                                        <hr>
+                                        <div class="w3-card-2 w3-center">
+                                            <textarea id="messageSaillie" placeholder="Message pour le propriétaire"></textarea>
+                                        </div>
+                                        <button id="EnvoyerMessageSaillie" class="w3-btn w3-black" onclick="document.getElementById('id03').style.display='none'" >Envoyer message</button>
+                                    </div>
+                                    <br/>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+                    <hr/>
+                    <div id="id04">
+                        <section class="w3-container wrap-reverse">
+                            <div class="w3-third w3-padding">
+                                <strong> Prix remportés </strong>
+                                <ul class="w3-ul">
+                                    <li>Grande belette de winchester</li>
+                                    <li>Bataille d'Hydapse</li>
+                                </ul>
+                                <br/>
+                                <a class="w3-btn w3-white w3-border m5"> Acte de Naissance </a>
+                                <a class="w3-btn w3-white w3-border m5"> Bilans Vétérinaires </a>
+                            </div>
+                            <div class="w3-twothird w3-padding">
+                                <strong> Biographie </strong>
+                                <div class="card tlj">
+                                    Cet étalon fut acheté par le père d’Alexandre, Philippe de Macédoine. Mais trop fougueux, il était réputé indomptable. Alexandre le sauva de la mort alors qu’il n’avait que 12 ans. C’est en observant le cheval qu’il se rendit compte qu’il avait peur de son ombre. Il l’en détourna, et les deux compagnons devinrent alors inséparables. Bucéphale mourut en 326 lors de la bataille de Hydapse, où il défendit son cavalier farouchement ! Alexandre fonda alors la ville de Bouképhalia, pour lui rendre hommage.
+                                </div>
+                            </div>
+                        </section>
+                    </div>
+                </div>
+                <br/>
+            </div>
+            <!-- fin cheval -->
+            <!-- Debut cheval -->
+            <div class="fiche w3-card-8">
+                <!-- Bouton et actions -->
+                <header class="w3-container w3-teal w3-black">
+                    <img src="image/horse.png" class=" w3-image w3-round" /> Buchéphale l'indomptable
+                </header>
+                <!--Content-->
+                <div>
+                    <br/>
+                    <section class="w3-container">
+                        <div class="w3-third">
+                            <img src="image/pic01.jpg" class=" w3-image w3-round" />
+                        </div>
+                        <div class="w3-twothird w3-padding">
+                            <ul class="w3-ul">
+                                <li><strong>Nom : </strong> Buchéphale l'indomptable</li>
+                                <li><strong>Propriétaire : </strong> Alexandre Le Grand</li>
+                                <li><strong>Sexe : </strong> Male</li>
+                                <li><strong>Race : </strong> Mangalarga marchador</li>
+                                <li><strong>Age : </strong> 8 ans</li>
+                                <li><strong>Catégorie : </strong> Cheval de selle</li>
+                                <li><strong>Saillie : </strong> <span class="w3-tag w3-red">Naturelle</span> <span class="w3-tag w3-yellow">Artificielle</span></li>
+                                <li><a id="MoreInfo" class="w3-btn w3-white w3-border ml5 bouttonSaillie">Plus d'informations</a> <a onclick="document.getElementById('id03').style.display='block'" id="ProposerSaillie" class="w3-btn w3-black w3-border ml5 bouttonSaillie">Proposer Saillie</a> </li>
+                            </ul>
+                            <div id="id03" class="w3-modal">
+                                <div class="w3-modal-content w3-animate-top w3-card-8">
+                                    <header class="w3-container w3-teal  w3-black">
+                                        <span onclick="document.getElementById('id03').style.display='none'" class="w3-closebtn">&times;</span>
+                                        <h2>Message au Propriétaire</h2>
+                                    </header>
+                                    <div class="w3-container">
+                                        <div class="w3-card-2 w3-center">
+                                            <ul class="w3-ul">
+                                                <li><strong>Nom : </strong> Buchéphale l'indomptable</li>
+                                                <li><strong>Propriétaire : </strong> Alexandre Le Grand</li>
+                                                <li><strong>Race : </strong> Mangalarga marchador</li>
+                                            </ul>
+                                        </div>
+                                        <hr>
+                                        <div class="w3-card-2 w3-center">
+                                            <textarea id="messageSaillie" placeholder="Message pour le propriétaire"></textarea>
+                                        </div>
+                                        <button id="EnvoyerMessageSaillie" class="w3-btn w3-black" onclick="document.getElementById('id03').style.display='none'" >Envoyer message</button>
+                                    </div>
+                                    <br/>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+                    <hr/>
+                    <div id="id04">
+                        <section class="w3-container wrap-reverse">
+                            <div class="w3-third w3-padding">
+                                <strong> Prix remportés </strong>
+                                <ul class="w3-ul">
+                                    <li>Grande belette de winchester</li>
+                                    <li>Bataille d'Hydapse</li>
+                                </ul>
+                                <br/>
+                                <a class="w3-btn w3-white w3-border m5"> Acte de Naissance </a>
+                                <a class="w3-btn w3-white w3-border m5"> Bilans Vétérinaires </a>
+                            </div>
+                            <div class="w3-twothird w3-padding">
+                                <strong> Biographie </strong>
+                                <div class="card tlj">
+                                    Cet étalon fut acheté par le père d’Alexandre, Philippe de Macédoine. Mais trop fougueux, il était réputé indomptable. Alexandre le sauva de la mort alors qu’il n’avait que 12 ans. C’est en observant le cheval qu’il se rendit compte qu’il avait peur de son ombre. Il l’en détourna, et les deux compagnons devinrent alors inséparables. Bucéphale mourut en 326 lors de la bataille de Hydapse, où il défendit son cavalier farouchement ! Alexandre fonda alors la ville de Bouképhalia, pour lui rendre hommage.
+                                </div>
+                            </div>
+                        </section>
+                    </div>
+                </div>
+                <br/>
+            </div>
+            <!-- fin cheval -->
+            <!-- Debut cheval -->
+            <div class="fiche w3-card-8">
+                <!-- Bouton et actions -->
+                <header class="w3-container w3-teal w3-black">
+                    <img src="image/horse.png" class=" w3-image w3-round" /> Buchéphale l'indomptable
+                </header>
+                <!--Content-->
+                <div>
+                    <br/>
+                    <section class="w3-container">
+                        <div class="w3-third">
+                            <img src="image/pic01.jpg" class=" w3-image w3-round" />
+                        </div>
+                        <div class="w3-twothird w3-padding">
+                            <ul class="w3-ul">
+                                <li><strong>Nom : </strong> Buchéphale l'indomptable</li>
+                                <li><strong>Propriétaire : </strong> Alexandre Le Grand</li>
+                                <li><strong>Sexe : </strong> Male</li>
+                                <li><strong>Race : </strong> Mangalarga marchador</li>
+                                <li><strong>Age : </strong> 8 ans</li>
+                                <li><strong>Catégorie : </strong> Cheval de selle</li>
+                                <li><strong>Saillie : </strong> <span class="w3-tag w3-red">Naturelle</span> <span class="w3-tag w3-yellow">Artificielle</span></li>
+                                <li><a id="MoreInfo" class="w3-btn w3-white w3-border ml5 bouttonSaillie">Plus d'informations</a> <a onclick="document.getElementById('id03').style.display='block'" id="ProposerSaillie" class="w3-btn w3-black w3-border ml5 bouttonSaillie">Proposer Saillie</a> </li>
+                            </ul>
+                            <div id="id03" class="w3-modal">
+                                <div class="w3-modal-content w3-animate-top w3-card-8">
+                                    <header class="w3-container w3-teal  w3-black">
+                                        <span onclick="document.getElementById('id03').style.display='none'" class="w3-closebtn">&times;</span>
+                                        <h2>Message au Propriétaire</h2>
+                                    </header>
+                                    <div class="w3-container">
+                                        <div class="w3-card-2 w3-center">
+                                            <ul class="w3-ul">
+                                                <li><strong>Nom : </strong> Buchéphale l'indomptable</li>
+                                                <li><strong>Propriétaire : </strong> Alexandre Le Grand</li>
+                                                <li><strong>Race : </strong> Mangalarga marchador</li>
+                                            </ul>
+                                        </div>
+                                        <hr>
+                                        <div class="w3-card-2 w3-center">
+                                            <textarea id="messageSaillie" placeholder="Message pour le propriétaire"></textarea>
+                                        </div>
+                                        <button id="EnvoyerMessageSaillie" class="w3-btn w3-black" onclick="document.getElementById('id03').style.display='none'" >Envoyer message</button>
+                                    </div>
+                                    <br/>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+                    <hr/>
+                    <div id="id04">
+                        <section class="w3-container wrap-reverse">
+                            <div class="w3-third w3-padding">
+                                <strong> Prix remportés </strong>
+                                <ul class="w3-ul">
+                                    <li>Grande belette de winchester</li>
+                                    <li>Bataille d'Hydapse</li>
+                                </ul>
+                                <br/>
+                                <a class="w3-btn w3-white w3-border m5"> Acte de Naissance </a>
+                                <a class="w3-btn w3-white w3-border m5"> Bilans Vétérinaires </a>
+                            </div>
+                            <div class="w3-twothird w3-padding">
+                                <strong> Biographie </strong>
+                                <div class="card tlj">
+                                    Cet étalon fut acheté par le père d’Alexandre, Philippe de Macédoine. Mais trop fougueux, il était réputé indomptable. Alexandre le sauva de la mort alors qu’il n’avait que 12 ans. C’est en observant le cheval qu’il se rendit compte qu’il avait peur de son ombre. Il l’en détourna, et les deux compagnons devinrent alors inséparables. Bucéphale mourut en 326 lors de la bataille de Hydapse, où il défendit son cavalier farouchement ! Alexandre fonda alors la ville de Bouképhalia, pour lui rendre hommage.
+                                </div>
+                            </div>
+                        </section>
+                    </div>
+                </div>
+                <br/>
+            </div>
+            <!-- fin cheval -->
         </section>
         <!-- End Page Content -->
     </div>
