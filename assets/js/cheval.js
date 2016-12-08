@@ -4,6 +4,7 @@ $(document).ready(function() {
     var papa = true;
     var mama = true;
     var momo = true;
+    var child = false;
 
     $("#formAjoutCheval").hide();
     $("#saillieFormAjout").hide();
@@ -12,6 +13,9 @@ $(document).ready(function() {
     $("#momoOuté").hide();
     $("#papaCache").hide();
     $("#mamaCache").hide();
+    $("#enfant1").hide();
+    $("#enfant2").hide();
+    $("#newGea").hide();
 
     $("#openFormCheval").click(function(e) {
         e.preventDefault();
@@ -22,6 +26,39 @@ $(document).ready(function() {
         else{
              $("#formAjoutCheval").hide();
              toogle = true;
+        }
+    });
+
+    $("#raficherModalRemplie").click(function(e){
+        $("#id02").show();
+        $("#papaCache").show();
+        $("#mamaCache").show();
+        $("#enfant1").show();
+        $("#enfant2").show();
+        $("#maman").hide();
+        $("#papa").hide();
+    });
+
+    $("#saveGea").click(function(e){
+        e.preventDefault();
+        $("#id02").hide();
+        $("#newGea").show();
+        $("#oldGea").hide();
+    });
+
+    $("#addMomo").click(function(e) {
+        e.preventDefault();
+        console.log("coucou");
+        if(child == true){
+            $("#enfant2").show()
+            $("#momoOuté").hide();
+            momo = true;
+        }
+        else{
+            $("#enfant1").show();
+            $("#momoOuté").hide();
+            momo = true;
+            child = true;
         }
     });
 

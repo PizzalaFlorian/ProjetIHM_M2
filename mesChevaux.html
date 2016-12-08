@@ -196,7 +196,17 @@
                                 <li><strong>Age : </strong> 8 ans</li>
                                 <li><strong>Catégorie : </strong> Cheval de selle</li>
                                 <li><strong>Saillie : </strong> <span class="w3-tag w3-red">Naturelle</span> <span class="w3-tag w3-yellow">Artificielle</span></li>
-                                <li><strong>Liens de parentés : </strong> <a onclick="document.getElementById('id02').style.display='block'" class="w3-btn w3-black w3-border ml5">Ajouter des liens de parentés</a></li>
+                                <li id="oldGea"><strong>Liens de parentés : </strong> <a onclick="document.getElementById('id02').style.display='block'" class="w3-btn w3-black w3-border ml5">Ajouter des liens de parentés</a>
+                                </li>
+                                <li id="newGea" class="flexRow"><strong>Liens de parentés : </strong>
+                                    <div class="flexlist ml5">
+                                        <span><bold> Père : </bold> Ousari le roi fénéant </span>
+                                        <span><bold> Mère : </bold> Rachel Alexandra </span>
+                                        <span><bold> fil(s) : </bold> Tornado </span>
+                                        <span><bold> file(s) : </bold> Stépanie IV </span>
+                                        <strong><a id="raficherModalRemplie" class="color-black hover">Ajouter des liens de parentés</a></strong>
+                                    </div>
+                                </li>
                             </ul>
                             <div id="id02" class="w3-modal">
                                 <div class="w3-modal-content w3-animate-top w3-card-8">
@@ -226,7 +236,7 @@
                                               <li class="w3-padding-16">
                                                 <span id="raPapa" onclick="this.parentElement.style.display='none'" 
                                                 class="w3-closebtn w3-padding">&times;</span>
-                                                <img src="image/ourasi.jpg" class="w3-left w3-circle" style="width:60px">
+                                                <img src="image/ourasi.jpg" class="w3-left w3-circle" style="width:40px">
                                                 <span class="w3-xlarge">Ourasi le Roi fénéant</span><br>
                                               </li>
                                             </ul>
@@ -290,12 +300,16 @@
                                               <li class="w3-padding-16">
                                                 <span id="raEn" onclick="this.parentElement.style.display='none'" 
                                                 class="w3-closebtn w3-padding">&times;</span>
-                                                <img src="image/inconnu.jpg" class="w3-left w3-circle" style="width:40px;">
-                                                <span class="w3-xlarge">Tornado</span><br>
+                                                <img src="image/pic05.jpg" class="w3-left w3-circle" style="width:40px;">
+                                                <span class="w3-xlarge">Stéphanie IV</span><br>
                                               </li>
                                             </ul>
-                                        </div>
+                                          </div>
                                     </div>
+                                    <br/>
+                                    <center>
+                                      <button id="saveGea" class="w3-btn w3-black w3-center" > Enregistrer </button>
+                                    </center>
                                     <br/>
                                 </div>
                             </div>
@@ -409,32 +423,7 @@
                                 <li><strong>Saillie : </strong><span class="w3-tag w3-yellow">Artificielle</span></li>
                                 <li><strong>Liens de parentés : </strong> <a onclick="document.getElementById('id02').style.display='block'" class="w3-btn w3-black w3-border ml5">Ajouter des liens de parentés</a></li>
                             </ul>
-                            <div id="id02" class="w3-modal">
-                                <div class="w3-modal-content w3-animate-top w3-card-8">
-                                    <header class="w3-container w3-teal  w3-black">
-                                        <span onclick="document.getElementById('id02').style.display='none'" class="w3-closebtn">&times;</span>
-                                        <h2>Définir la Généalogie de mon cheval</h2>
-                                    </header>
-                                    <div class="w3-container">
-                                        <div class="w3-half w3-card-2 w3-center">
-                                            <h4>Père</h4>
-                                            <a id="papa" class="w3-btn-floating-large w3-ripple w3-black">+</a>
-                                        </div>
-                                        <div class="w3-half w3-card-2 w3-center">
-                                            <h4>Mère</h4>
-                                            <a id="maman" class="w3-btn-floating-large w3-ripple w3-black">+</a>
-                                        </div>
-                                    </div>
-                                    <div class="w3-container">
-                                        <div class="w3-card-2 w3-center">
-                                            <h4>Enfant(s)</h4>
-                                            <a id="morveux" class="w3-btn-floating-large w3-ripple w3-black">+</a>
-                                        </div>
-                                    </div>
-                                    <br/>
-                                </div>
-                            </div>
-                        </div>
+                          </div>
                     </section>
                     <section class="w3-container wrap-reverse">
                         <div class="w3-third w3-padding">
@@ -490,31 +479,6 @@
                                     </div>
                                 </li>
                             </ul>
-                            <div id="id02" class="w3-modal">
-                                <div class="w3-modal-content w3-animate-top w3-card-8">
-                                    <header class="w3-container w3-teal  w3-black">
-                                        <span onclick="document.getElementById('id02').style.display='none'" class="w3-closebtn">&times;</span>
-                                        <h2>Définir la Généalogie de mon cheval</h2>
-                                    </header>
-                                    <div class="w3-container">
-                                        <div class="w3-half w3-card-2 w3-center">
-                                            <h4>Père</h4>
-                                            <a id="papa" class="w3-btn-floating-large w3-ripple w3-black">+</a>
-                                        </div>
-                                        <div class="w3-half w3-card-2 w3-center">
-                                            <h4>Mère</h4>
-                                            <a id="maman" class="w3-btn-floating-large w3-ripple w3-black">+</a>
-                                        </div>
-                                    </div>
-                                    <div class="w3-container">
-                                        <div class="w3-card-2 w3-center">
-                                            <h4>Enfant(s)</h4>
-                                            <a id="morveux" class="w3-btn-floating-large w3-ripple w3-black">+</a>
-                                        </div>
-                                    </div>
-                                    <br/>
-                                </div>
-                            </div>
                         </div>
                     </section>
                     <section class="w3-container wrap-reverse">
