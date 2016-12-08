@@ -16,6 +16,13 @@ $(document).ready(function() {
     $("#enfant1").hide();
     $("#enfant2").hide();
     $("#newGea").hide();
+    $("#ptitNouveau").hide()
+
+    $("#addPtit").click(function(e){
+        e.preventDefault();
+        $("#formAjoutCheval").hide();
+        $("#ptitNouveau").show()
+    })
 
     $("#openFormCheval").click(function(e) {
         e.preventDefault();
