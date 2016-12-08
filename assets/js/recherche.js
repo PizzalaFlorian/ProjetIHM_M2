@@ -5,21 +5,33 @@ $(document).ready(function() {
     $("#eventResearch").hide();
     $("#advanced").hide();
     $("div#id04").hide();
+    $("#dada").show();
+    $("#listOrga").hide();
+    $("#listEvent").hide();
 
     $("#cheval").click(function() {
         $("#chevalResearch").show();
+        $("#dada").show();
         $("#organismeResearch").hide();
         $("#eventResearch").hide();
+        $("#listOrga").hide();
+        $("#listEvent").hide();
     });
     $("#orga").click(function() {
         $("#chevalResearch").hide();
+        $("#dada").hide();
         $("#organismeResearch").show();
         $("#eventResearch").hide();
+        $("#listOrga").show();
+        $("#listEvent").hide();
     });
     $("#event").click(function() {
+        $("#dada").hide();
         $("#chevalResearch").hide();
         $("#organismeResearch").hide();
         $("#eventResearch").show();
+        $("#listOrga").hide();
+        $("#listEvent").show();
     });
 
     $("a#MoreInfo").click(function () {
