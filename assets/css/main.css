@@ -330,8 +330,14 @@ textarea {
 }
 
 @media screen and (max-width: 640px) {
-    .imageActu {
+    /*.imageActu {
         width: 257px;
+    }*/
+    .w3-third{
+        width: 100% !important;
+    }
+    #listActu a{
+        width: 100% !important;
     }
     .infoFileActu {
         margin-left: 15px;
