@@ -39,6 +39,12 @@ body {
     display: none;
 }
 
+div#listActu {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
 #actualiteLog {
     display: none;
 }
