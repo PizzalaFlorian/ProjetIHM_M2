@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html>
+  <title>Le cheval c'est trop cool !</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="http://www.w3schools.com/lib/w3.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" type="text/css" href="assets/css/main.css">
+  <script src="http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
+  <script type="text/javascript" src="assets/js/mainConnecter.js"> </script>
+  <!-- favicon -->
+<link rel="apple-touch-icon" sizes="57x57" href="./icon/apple-icon-57x57.png">
+<link rel="apple-touch-icon" sizes="60x60" href="./icon/apple-icon-60x60.png">
+<link rel="apple-touch-icon" sizes="72x72" href="./icon/apple-icon-72x72.png">
+<link rel="apple-touch-icon" sizes="76x76" href="./icon/apple-icon-76x76.png">
+<link rel="apple-touch-icon" sizes="114x114" href="./icon/apple-icon-114x114.png">
+<link rel="apple-touch-icon" sizes="120x120" href="./icon/apple-icon-120x120.png">
+<link rel="apple-touch-icon" sizes="144x144" href="./icon/apple-icon-144x144.png">
+<link rel="apple-touch-icon" sizes="152x152" href="./icon/apple-icon-152x152.png">
+<link rel="apple-touch-icon" sizes="180x180" href="./icon/apple-icon-180x180.png">
+<link rel="icon" type="image/png" sizes="192x192" href="./icon/android-icon-192x192.png">
+<link rel="icon" type="image/png" sizes="32x32" href="./icon/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="96x96" href="./icon/favicon-96x96.png">
+<link rel="icon" type="image/png" sizes="16x16" href="./icon/favicon-16x16.png">
+<link rel="manifest" href="./icon/manifest.json">
+<meta name="msapplication-TileColor" content="#ffffff">
+<meta name="msapplication-TileImage" content="./icon/ms-icon-144x144.png">
+<meta name="theme-color" content="#ffffff">
+
+  <body>
+
+       <!-- Navbar -->
+    <div class="w3-top">
+      <ul class="w3-navbar w3-black w3-card-2 w3-left-align">
+        <li class="w3-hide-medium w3-hide-large w3-opennav w3-right">
+          <a class="w3-padding-large" href="javascript:void(0)" onclick="myFunction()" title="Toggle Navigation Menu"><i class="fa fa-bars"></i></a>
+        </li>
+        <li><a href="index.html" class="w3-hover-none w3-hover-text-grey w3-padding-large">ACCUEIL</a></li>
+        <li class="w3-hide-small"><a href="./actu.html" class="w3-padding-large">ACTUALITÉS</a></li>
+        <li id="menuProfil" class="w3-hide-small w3-dropdown-hover">
+          <a href="javascript:void(0)" class="w3-hover-none w3-padding-large" title="More">PROFIL<i class="fa fa-caret-down"></i></a>
+          <div class="w3-dropdown-content w3-white w3-card-4">
+            <a href="mesInfo.html">MON PROFIL</a>
+            <a href="mesPages.html">MES PAGES</a>
+            <a href="mesChevaux.html">MES CHEVAUX</a>
+          </div>
+        </li>
+        <li class="w3-hide-small"><a href="./recherche.html" class="w3-padding-large">RECHERCHE</a></li>
+
+        <form id="barreRecherche">
+          <li id="idForRecherche" class="w3-hide-small w3-right">
+            <input id="myInputRecherche">
+            <a href="./recherche.html" class="w3-padding-large w3-hover-red">
+              <i class="fa fa-search"></i>
+            </a>
+          </li>
+        </form>
+
+
+
+        <li id="deconnexionButton" class="w3-hide-small w3-right"><a href="#" class="w3-padding-large w3-hover-red">Deconnexion</a></li>
+
+        <li id="loginButton" class="w3-hide-small w3-right"><a href="#" class="w3-padding-large w3-hover-red">Login</a> </li>
+        <li id="InscriptionButton" class="w3-hide-small w3-right"><a href="#" class="w3-padding-large w3-hover-red">Inscription</a> </li>
+
+        <li id="iconNotif" class="w3-hide-small w3-right w3-red">
+          <a href="./notif.html" class="w3-padding-large w3-hover-red">
+            <i class="fa fa-bell-o " aria-hidden="true"></i>
+          </a>
+        </li>
+      </ul>
+
+      <div id="nav-login" class="w3-navbar w3-black w3-card-2 w3-left-align w3-hide-small">
+        <form id="forLogin" class="w3-right">
+          <label id="LabelCompte" for="Compte">Compte : </label>
+          <input id="Compte">
+          <label id="LabelMdp" for="Mdp">Mot de passe : </label>
+          <input id="Mdp">
+          <button id="bouttonLog" >Connexion</button>
+        </form>
+      </div>
+
+      <div id="nav-inscription" class="w3-navbar w3-black w3-card-2 w3-left-align w3-hide-small">
+        <form id="forInscription" class="w3-right">
+          <label id="LabelCompteInscrip" for="CompteInscrip">E-mail : </label>
+          <input id="CompteInscrip">
+          <label id="LabelMdpInscrip" for="MdpInscrip">Mot de passe : </label>
+          <input id="MdpInscrip">
+          <label id="LabelMdpInscripConfir" for="MdpInscripConfir">Confirmation : </label>
+          <input id="MdpInscripConfir">
+          <button id="bouttonInscr" >Inscription</button>
+        </form>
+      </div>
+    </div>
+
+    <!-- Navbar on small screens -->
+    <div id="navDemo" class="w3-hide w3-hide-large w3-hide-medium w3-top">
+      <ul class="w3-navbar w3-left-align w3-black">
+        <li><a class="w3-padding-large" href="./actu.html">ACTUALITÉS</a></li>
+        <li><a class="w3-padding-large" href="./mesInfo.html">PROFIL</a></li>
+        <li><a class="w3-padding-large" href="./mesPages.html">MES PAGES</a></li>
+        <li><a class="w3-padding-large" href="./mesChevaux.html">MES CHEVAUX</a></li>
+        <li><a class="w3-padding-large" href="./recherche.html">RECHERCHE</a></li>
+      </ul>
+    </div>
+
+    <!-- Page content -->
+    <div class="w3-content" style="margin-top: 100px;">
+      
+      <div class="fiche w3-card-8">
+                <!-- Bouton et actions -->
+                <header class="w3-container w3-teal w3-black">
+                    <img src="image/horse.png" class=" w3-image w3-round" /> Tornado
+                </header>
+                <!--Content-->
+                <div>
+                    <br/>
+                    <section class="w3-container">
+                        <div class="w3-third">
+                            <img src="image/tornado.jpg" class=" w3-image w3-round" />
+                            <!-- <i class="fa fa-trash w3-xxlarge posIcon" aria-hidden="true"></i>
+                              <i class="fa fa-download w3-xxlarge posIcon" aria-hidden="true"></i> -->
+                        </div>
+                        <div class="w3-twothird w3-padding">
+                            <ul class="w3-ul">
+                                <li><strong>Nom : </strong> Tornado</li>
+                                <li><strong>Propriétaire : </strong> Zorro</li>
+                                <li><strong>Sexe : </strong> Male</li>
+                                <li><strong>Race : </strong> Frizon</li>
+                                <li><strong>Age : </strong> 4 ans</li>
+                                <li><strong>Catégorie : </strong> Cheval de demi-selle</li>
+                                <li><strong>Saillie : </strong> <span class="w3-tag w3-red">Naturelle</span> <span class="w3-tag w3-yellow">Artificielle</span></li>
+                                </li>
+                               
+                            </ul>
+                        </div>
+                    </section>
+                    <section class="w3-container wrap-reverse">
+                        <div class="w3-third w3-padding">
+                            <strong> Prix remportés </strong>
+                            <ul class="w3-ul">
+                                <li>La course du petit train de la mine</li>
+                                <li>Le sergent Garcia d'or</li>
+                            </ul>
+                            <br/>
+                            <a class="w3-btn w3-white w3-border m5"> Acte de Naissance </a>
+                            <a class="w3-btn w3-white w3-border m5"> Bilans Vétérinaires </a>
+                        </div>
+                        <div class="w3-twothird w3-padding">
+                            <strong> Biographie </strong>
+                            <div class="card tlj">
+                                Cet étalon fut acheté par le père d’Alexandre, Philippe de Macédoine. Mais trop fougueux, il était réputé indomptable. Alexandre le sauva de la mort alors qu’il n’avait que 12 ans. C’est en observant le cheval qu’il se rendit compte qu’il avait peur de son ombre. Il l’en détourna, et les deux compagnons devinrent alors inséparables. Bucéphale mourut en 326 lors de la bataille de Hydapse, où il défendit son cavalier farouchement ! Alexandre fonda alors la ville de Bouképhalia, pour lui rendre hommage.
+                            </div>
+                        </div>
+                    </section>
+                </div>
+             <br/>
+             <a class="w3-btn w3-white w3-border pad5" style="float: right; margin-top: -40px; margin-right: 5px;"> Arreter de Suivre <i class="fa fa-times"></i></a>
+            </div>
+
+            <div class="w3-panel w3-light-grey">
+              <h2 class="w3-text-shadow w3-center">Dernières Actualités de Tornado </h2>
+            </div>
+
+            <section class="evenementPage w3-container">
+            <div class="fiche w3-card-8 w3-half">
+                <!-- Bouton et actions -->
+                <header class="w3-container w3-teal w3-black">
+                    Le sergent Garcia rentre bredouille une fois de plus
+                </header>
+                <!--Content-->
+                <div>
+                    <br/>
+                    <section class="w3-container ">
+                        <div class="w3-center">
+                            <img src="image/garcia.jpg" class=" w3-image w3-round" />
+                        </div>
+                        <br>
+                       
+                    </section>
+                    <section class="w3-container wrap-reverse">
+                        <div class="w3-padding">
+                            <div class="card tlj">
+                                <p>Après une longue cavalcades dans les colines de Los Angeles, le Sergent rentre une fois de plus bredouille. Le criminel Zorro, bien connu des forces de la milice, à encore une fois échapé au Sergent. Ce dernier déclare que Tornado, le cheval du bandit, est une véritable force de la nature. Sa dextérité dans les broussailles des colinnes n'as d'éguale que sa vitesse de pointe. << Tant que Zorro utilisera Tornado, il est nous est impossible de l'attrapper >> Déclare le Sergent à notre tribune ce matin. </p>
+                            </div>
+                            <br>
+                            <div class="commentaire">
+                              <p><i class="fa fa-comments" aria-hidden="true"></i> SERGENT GARCIA !!!! DANS MON BUREAU IMMEDIATEMENT !!! signé : Le Commandant </p>
+                                <p><i class="fa fa-comments" aria-hidden="true"></i><input type="text" placeholder="Commentaire" style="width: 90%;"></p>
+                            </div>
+                        </div>
+                    </section>
+                </div>
+                <br/>
+            </div>
+
+            <div class="fiche w3-card-8">
+                <!-- Bouton et actions -->
+                <header class="w3-container w3-teal w3-black">
+                    La folle course des nains montés
+                </header>
+                <!--Content-->
+                <div>
+                    <br/>
+                    <section class="w3-container ">
+                        <div class="w3-center">
+                            <img src="image/course2.jpg" class=" w3-image w3-round" />
+                        </div>
+                        <br>
+                        <div class="w3-twothird w3-padding">
+                            <ul class="w3-ul">
+                                <li><strong>Vainqueur : </strong> Kenny Baker</li>
+                                <li><strong>Second : </strong> Peter Dinklage</li>
+                                <li><strong>Évènement passé</strong></li>
+                            </ul>
+                        </div>
+                    </section>
+                    <section class="w3-container wrap-reverse">
+                        <div class="w3-padding">
+                            <div class="card tlj">
+                                Et oui ! Encore une fois le célèbre Kenny a remporté la victoire ce dimanche 1 avril face à son nouveau rival Peter. Malheureusement pour ce dernier le repas à la cantine fût trop consistent ce qui le rendit trop lourd pour son poney de premier choix.
+                            </div>
+                            <br>
+                            <div class="commentaire">
+                                <p><i class="fa fa-comments" aria-hidden="true"></i> Youhou !!! vive mon petit Kennychou adoré ! Je t'aime Kennyyyyyy </p>
+                                <p><i class="fa fa-comments" aria-hidden="true"></i> Bouuuh ! Encore une victoire volé par ce nabot de Baker, il ne mérite pourtant pas de gagner face au géant Peter Dinklage </p>
+                                <p><i class="fa fa-comments" aria-hidden="true"></i> Il n'y a eu aucune triche ! Alors arrête de semer ton venin partout</p>
+                                <p><i class="fa fa-comments" aria-hidden="true"></i><input type="text" placeholder="Réponse" style="width: 90%;"></p>
+                            </div>
+                        </div>
+                    </section>
+                </div>
+                <br/>
+            </div>
+        </section>
+        <center>
+        <a class ="w3-btn w3-white w3-border"> Voir plus d'actualités </a>
+        </center>
+    <!-- End Page Content -->
+    </div>
+
+    <!-- Footer -->
+    <footer class="w3-container w3-padding-64 w3-center w3-opacity w3-light-grey w3-xlarge">
+      <i class="fa fa-facebook-official w3-hover-text-indigo"></i>
+      <i class="fa fa-instagram w3-hover-text-purple"></i>
+      <i class="fa fa-snapchat w3-hover-text-yellow"></i>
+      <i class="fa fa-pinterest-p w3-hover-text-red"></i>
+      <i class="fa fa-twitter w3-hover-text-light-blue"></i>
+      <i class="fa fa-linkedin w3-hover-text-indigo"></i>
+      <p class="w3-medium">Powered by <a href="http://www.w3schools.com/w3css/default.asp" target="_blank">w3.css</a></p>
+    </footer>
+
+  </body>
+</html>
